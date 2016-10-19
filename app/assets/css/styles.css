@@ -1101,3 +1101,28 @@ form .form-control:focus {
 .pre-loader {
   background: #336799;
 }
+
+@keyframes upDownMove {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+
+.down {
+    animation: upDownMove 1.5s ease-in-out infinite;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    color: hsla(0,0%,100%,.75);
+    left: 50%;
+    margin-left: -7px;
+}

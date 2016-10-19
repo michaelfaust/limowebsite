@@ -120,7 +120,6 @@ var appMaster = {
             onHoverStop: "off",
             fullScreenOffsetContainer: ""
         });
-        
     },
 
     scrollMenu: function(){
@@ -142,7 +141,7 @@ var appMaster = {
                 $(this).closest('.navbar-collapse').removeClass('in');
             }
         });
-        
+
     },
     placeHold: function(){
         // run Placeholdem on all elements with placeholders
@@ -153,7 +152,6 @@ var appMaster = {
 
 
 $(document).ready(function() {
-
     appMaster.smoothScroll();
 
     appMaster.reviewsCarousel();
@@ -167,5 +165,4 @@ $(document).ready(function() {
     appMaster.scrollMenu();
 
     appMaster.placeHold();
-
 });
