@@ -243,7 +243,7 @@ section#features .media.feature:first-child {
 section#features img {
   margin: 0 auto 20px;
 }
-section#reviews {
+section#demo {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -533,10 +533,10 @@ form .form-control {
   height: 40px;
   line-height: 40px;
   padding: 10px 20px;
-  color: #cfcfcf;
   border: 2px solid #cccccc;
   font-weight: 300;
 }
+
 form textarea.form-control {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -803,13 +803,13 @@ section#features .media.active i.fa {
 section#features .media.active .media-heading {
   color: #66cdcc;
 }
-section#reviews {
+section#demo {
   background: url("../img/freeze/bk-freeze.jpg");
 }
-section#reviews header {
+section#demo header {
   color: #ffffff;
 }
-section#reviews header h1:after {
+section#demo header h1:after {
   background: #ffffff;
 }
 section#screens header h1:after {
@@ -841,41 +841,10 @@ section#screens .filter a.active {
   background: #66cdcc;
   border-color: #66cdcc;
 }
-/* demo video Section */
-section#demo {
+/* support section */
+section#support {
   background: #f6f6f6;
 }
-section#demo header h1:after {
-  background: #66cdcc;
-}
-/* Get app Section */
-section#getApp {
-  background: url("../img/freeze/bk-freeze-ga.jpg");
-}
-section#getApp header {
-  color: #ffffff;
-}
-section#getApp header h1:after {
-  background: #ffffff;
-}
-section#getApp .platforms .media {
-  border: 2px solid #ffffff;
-  color: #ffffff;
-}
-section#getApp .platforms .media a i {
-  color: #ffffff;
-}
-section#getApp .platforms .media a div.media-body {
-  color: #ffffff;
-}
-section#getApp .platforms .media:hover {
-  background: #ffffff;
-}
-section#getApp .platforms .media:hover a i,
-section#getApp .platforms .media:hover a div.media-body {
-  color: #66cdcc;
-}
-/* support section */
 section#support header h1:after {
   background: #66cdcc;
 }

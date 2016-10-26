@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script type="text/javascript" src="assets/js/modernizr.custom.32033.js"></script>
 
@@ -64,11 +63,11 @@
                             </li>
                             <li><a href="#features">features</a>
                             </li>
-                            <li><a href="#reviews">demo</a>
+                            <li><a href="#demo">demo</a>
                             </li>
                             <li><a href="#screens">price</a>
                             </li>
-                            <li><a href="#demo">support</a>
+                            <li><a href="#support">support</a>
                             </li>
                             <li><a class="getApp" href="#getApp">buy</a>
                             </li>
@@ -125,7 +124,7 @@
     </header>
 
     <div class="wrapper" id="fullpage">
-        <section id="about" class="section">
+        <section id="about">
             <div class="container">
 
                 <div class="section-heading scrollpoint sp-effect3">
@@ -167,7 +166,7 @@
             </div>
         </section>
 
-        <section id="features" class="section">
+        <section id="features">
             <div class="container">
                 <div class="section-heading scrollpoint sp-effect3">
                     <h1>Features</h1>
@@ -222,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-4" >
+                    <div class="col-md-4 col-sm-4 animated infinite bounce" >
                         <img src="assets/img/freeze/iphone-freeze.png" class="img-responsive scrollpoint sp-effect5" alt="">
                     </div>
                     <div class="col-md-4 col-sm-4 scrollpoint sp-effect2">
@@ -276,7 +275,7 @@
             </div>
         </section>
 
-        <section id="reviews" class="section">
+        <section id="demo">
             <div class="container">
                 <div class="section-heading inverse scrollpoint sp-effect3">
                     <h1>Demo</h1>
@@ -293,7 +292,7 @@
             </div>
         </section>
 
-        <section id="screens" class="section">
+        <section id="screens">
             <div class="container">
 
                 <div class="section-heading scrollpoint sp-effect3">
@@ -340,23 +339,64 @@
             </div>
         </section>
 
-        <section id="demo" class="section">
+        <section id="support">
             <div class="container">
                 <div class="section-heading scrollpoint sp-effect3">
                     <h1>Support</h1>
                     <div class="divider"></div>
-                    <p>Get Support</p>
+                    <p>For more info and support, contact us!</p>
                 </div>
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2 scrollpoint sp-effect2">
-                        <div class="video-container" >
-                            <iframe src=""></iframe>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea cols="30" rows="10" class="form-control" placeholder="Your message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </form>
+                            </div>
+                            <div class="col-md-4 col-sm-4 contact-details scrollpoint sp-effect2">
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-map-marker fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">4, Some street, California, USA</h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-envelope fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">
+                                            <a href="mailto:support@oleose.com">support@oleose.com</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-phone fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">+1 234 567890</h4>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="section">
+        <footer>
             <div class="container">
                 <a href="#" class="scrollpoint sp-effect3">
                     <img src="assets/img/freeze/logo.png" alt="" class="logo">
@@ -380,18 +420,7 @@
     <script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/vendors/scrolloverflow.min.js"></script>
-    <script src="assets/js/jquery.fullpage.extensions.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script>
-        $(document).ready(function() {
-            appMaster.preLoader();
-            // $('#fullpage').fullpage({
-            //     navigation: true,
-            //     navigationPosition: 'right',
-            // });
-        });
-    </script>
 </body>
 
 </html>
