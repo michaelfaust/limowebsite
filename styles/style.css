@@ -62,13 +62,18 @@ button:focus {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 hr.separator {
   border-top: 1px solid #f9b015;
   margin: 10px auto;
   width: 80px;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .margin-b-30 {
@@ -133,18 +138,25 @@ hr.separator {
 }
 .center-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  border-top: 1px solid #d8d4d9;
 }
 .center-title h2 {
   text-transform: capitalize;
   font-weight: 900;
   font-size: 36px;
-  margin-bottom: 15px;
+  margin-top: -20px;
+  margin-bottom: 10px;
   color: #000;
 }
+.center-title h2 span {
+  padding: 0 20px;
+  background-color: #fff;
+}
 .center-title p {
-  font-size: 15px;
-  line-height: 30px;
+  color: #999;
+  font-size: 13px !important;
+  line-height: 26px;
 }
 .center-title i {
   color: #f9b015;
@@ -179,12 +191,12 @@ hr.separator {
 }
 
 .btn-skin {
-  background-color: #f9b015;
   color: #fff;
+  border: 1px solid #fff;
 }
 .btn-skin:hover, .btn-skin:focus {
-  color: #fff;
-  background-color: #444;
+  color: #000;
+  background-color: #fff;
 }
 
 .btn-dark {
@@ -268,6 +280,10 @@ hr.separator {
   color: #4d4d4d;
 }
 
+.header-v1.sticky .navbar-nav > li > a:hover {
+  color: #f9b015;
+}
+
 .header-v1 .navbar-nav > .active > a, .header-v1 .navbar-nav > .active > a:focus, .header-v1 .navbar-nav > .active > a:hover {
   color: #f9b015;
   background-color: transparent;
@@ -276,6 +292,10 @@ hr.separator {
 .header-v1.sticky .navbar-nav > .active > a, .header-v1.sticky .navbar-nav > .active > a:focus, .header-v1.sticky .navbar-nav > .active > a:hover {
   color: #f9b015;
   background-color: transparent;
+}
+
+.header-v1 .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
 }
 
 .header-v1 .navbar-brand {
@@ -447,6 +467,10 @@ hr.separator {
 }
 
 .banner-intro {
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-color: transparent;
   width: 100%;
   height: 100%;
@@ -481,25 +505,9 @@ hr.separator {
   margin-left: 5px;
 }
 
-#about, #features, #newsletter, #products {
-  padding: 50px 0;
+#about, #ingredient, #newsletter, #products {
+  padding: 100px 0;
   background-color: #fff;
-}
-
-.feature-box {
-  margin-bottom: 40px;
-  text-align: center;
-}
-.feature-box i {
-  font-size: 40px;
-  display: block;
-  margin-bottom: 15px;
-}
-.feature-box h3 {
-  color: #000;
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: capitalize;
 }
 
 #about h3 {
@@ -516,6 +524,32 @@ hr.separator {
 #about p {
   font-weight: normal;
   font-size: 16px;
+}
+
+#ingredient .col-sm-3 {
+  padding: 0;
+  height: 210px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ingredient .col-sm-3 h4 {
+  text-align: center;
+}
+
+#ingredient .col-sm-3 div {
+  font-size: 13px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #fff;
+  background: rgba(0,0,0,0.6)
+}
+
+#ingredient .col-sm-3:hover > div {
+  display: block;
 }
 
 #newsletter h3 {
@@ -579,76 +613,6 @@ hr.separator {
   transition: 0.5s all;
   border: none;
 }
-
-/**gallery**/
-.gallery-container {
-  padding: 80px 0;
-}
-
-.gallery {
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.gallery p {
-  text-align: center;
-}
-
-.gallery img {
-  width: 100%;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.gallery .gallery-overlay {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.gallery .gallery-overlay a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  position: absolute;
-  top: 100%;
-  margin-top: -20px;
-  left: 50%;
-  margin-left: -20px;
-  font-size: 35px;
-  background-color: transparent;
-  color: #fff;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.gallery:hover img {
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.gallery:hover .gallery-overlay {
-  opacity: 1;
-}
-.gallery:hover .gallery-overlay a {
-  top: 50%;
-}
-
 
 @media (max-width: 767px) {
   .banner-intro h1 {

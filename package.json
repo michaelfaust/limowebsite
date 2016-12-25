@@ -8,6 +8,10 @@
     "type": "BSC",
     "url": ""
   },
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp"
+  },
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",

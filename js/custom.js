@@ -8,13 +8,12 @@ $(document).ready(function () {
   //      $('.home-contact').parallax("50%", 0.5);
   // }
   //backstretch background slideshow using for banner intro
-  $('.banner-slider').backstretch([
-    "./images/bg-1.jpg",
-    "./images/bg-2.jpg"
-  ], {
-    fade: 750,
-    duration: 3000
-  });
+  // $('.banner-slider').backstretch([
+  //   "./images/bg.jpg"
+  // ], {
+  //   fade: 750,
+  //   duration: 3000
+  // });
 
   //animated fixed header
   $(window).scroll(function () {
@@ -34,7 +33,7 @@ $(document).ready(function () {
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
           $('html,body').animate({
-            scrollTop: target.offset().top-60
+            scrollTop: target.offset().top
           }, 1000);
           return false;
         }
@@ -122,7 +121,7 @@ $(document).ready(function () {
       {
         boxClass: 'wow', // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
-        mobile: true        // trigger animations on mobile devices (true is default)
+        mobile: false       // trigger animations on mobile devices (true is default)
       }
   );
   wow.init();
