@@ -62,7 +62,7 @@ button:focus {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 hr.separator {
@@ -76,8 +76,36 @@ hr {
   margin-bottom: 0;
 }
 
+.margin-t-30 {
+  margin-top: 30px;
+}
+
+.margin-r-30 {
+  margin-right: 30px;
+}
+
 .margin-b-30 {
   margin-bottom: 30px;
+}
+
+.margin-l-30 {
+  margin-left: 30px;
+}
+
+.padding-t-40 {
+  padding-top: 40px;
+}
+
+.padding-r-40 {
+  padding-right: 40px;
+}
+
+.padding-b-40 {
+  padding-bottom: 40px;
+}
+
+.padding-l-40 {
+  padding-left: 40px;
 }
 
 /**spaces**/
@@ -358,15 +386,10 @@ hr {
   }
 }
 
-.price-box {
-  height: 440px;
-  padding: 25px 40px;
+/* .price-box {
+  padding: px;
   margin-bottom: 30px;
   background-color: #eee;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .price-box h3 {
@@ -395,7 +418,7 @@ hr {
   transform: scale(1.06);
   transition: 0.5s all;
   border: none;
-}
+} */
 
 .footer {
   background-color: #323a45;
@@ -505,67 +528,86 @@ hr {
   margin-left: 5px;
 }
 
-#about, #ingredient, #newsletter, #products {
+#about, #ingredient, #nrv, #products, #newsletter {
   padding: 100px 0;
   background-color: #fff;
 }
 
-#about h3 {
-  text-align: center;
+#about h3, #newsletter h3 {
   color: #000;
-  font-size: 30px;
-  margin-bottom: 40px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-#about h4 {
-  text-align: center;
-}
-
-#about p {
+#about p, #newsletter p {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #ingredient .col-sm-3 {
-  padding: 0;
-  height: 210px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 5px;
 }
 
-#ingredient .col-sm-3 h4 {
-  text-align: center;
+.gallery {
+  overflow: hidden;
+  position: relative;
 }
 
-#ingredient .col-sm-3 div {
-  font-size: 13px;
-  display: none;
+.gallery img {
+  width: 100%;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery .gallery-overlay {
+  display: block;
+  position: absolute;
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery .gallery-overlay div {
+  position: absolute;
+  width: 100%;
   padding: 20px;
+  top: 100%;
+  font-size: 13px;
+  background-color: transparent;
   color: #fff;
-  background: rgba(0,0,0,0.6)
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery:hover img {
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.gallery:hover .gallery-overlay {
+  opacity: 1;
 }
 
-#ingredient .col-sm-3:hover > div {
-  display: block;
+.gallery:hover .gallery-overlay div {
+  top: 0;
 }
 
-#newsletter h3 {
+#products .gallery .gallery-overlay div {
   text-align: center;
-  color: #000;
-  font-size: 30px;
-  margin-bottom: 40px;
 }
 
-#newsletter h4 {
-  text-align: center;
-}
-
-#newsletter p {
-  font-weight: normal;
-  font-size: 16px;
+#products .col-sm-4 {
+  padding: 40px;
 }
 
 #newsletter .form-control {
@@ -635,25 +677,10 @@ hr {
   .header-v2 .navbar-brand {
     line-height: 16px;
   }
-
-  .assan-newsletter .input-group, .assan-newsletter .input-group-btn, .assan-newsletter .btn {
-    width: 100%;
-    display: block;
-  }
-
-  .assan-newsletter .form-control {
-    margin-bottom: 10px;
-    font-size: 13px;
-  }
 }
 @media (max-width: 375px) {
   .input-group .form-control, .input-group-addon, .input-group-btn {
     display: inherit;
-  }
-
-  .assan-newsletter .form-control {
-    margin-bottom: 10px;
-    font-size: 13px;
   }
 
   .footer .footer-bottom .list-inline li a {
