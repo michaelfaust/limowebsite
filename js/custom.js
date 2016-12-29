@@ -79,8 +79,6 @@ $(document).ready(function () {
       $email.attr('disabled', 'disabled');
       $submit.attr('disabled', 'disabled');
 
-      console.log(csrfToken);
-
       var request = $.ajax({
         url: '/signup',
         method: 'POST',
@@ -125,4 +123,14 @@ $(document).ready(function () {
       }
   );
   wow.init();
+
+  $("#applybtn").click(function () {
+    $('#newsletter .desc').addClass('moveleft');//('slide', {direction: 'left'}, 500);
+    $('#newsletter .tryform').addClass('moveright');//('slide', {direction: 'left'}, 500);
+  });
+
+  $("#backbtn").click(function () {
+    $('#newsletter .desc').removeClass('moveleft');//('slide', {direction: 'left'}, 500);
+    $('#newsletter .tryform').removeClass('moveright');//('slide', {direction: 'left'}, 500);
+  });
 });
