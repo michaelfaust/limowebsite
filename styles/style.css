@@ -546,15 +546,15 @@ hr {
 #about p, #newsletter p {
   font-weight: normal;
   font-size: 15px;
-  line-height: 28px;
+  line-height: 34px;
 }
 
 #ingredient .col-sm-3 {
   padding: 5px;
 }
 
-#nrv .textright, #nrv .textright th {
-  text-align: right;
+#nrv table, #nrv table th {
+  text-align: center;
 }
 
 .gallery {
@@ -629,7 +629,6 @@ hr {
 #newsletter .container {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
-  height: 610px;
 }
 
 /* #newsletter .container .desc {
@@ -637,13 +636,24 @@ hr {
 } */
 
 #newsletter .container .desc, #newsletter .container .tryform {
-  padding: 100px;
+  padding: 50px 20px;
+}
+
+@media (min-width: 768px) {
+  #newsletter .container .desc, #newsletter .container .tryform {
+    padding: 100px;
+  }
+}
+#newsletter #applyBtn {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
 }
 
 #newsletter select {
   width: initial;
   display: inline;
-  width: 100px;
+  width: 80px;
   color: #fff;
 }
 #newsletter .form-control {
@@ -675,10 +685,10 @@ hr {
 }
 
 @media (max-width: 767px) {
-  .banner-intro h1 {
+/*   .banner-intro h1 {
     font-size: 17px;
     line-height: 10px;
-  }
+  } */
 
   .banner-intro .banner-buttons .btn-white {
     display: none;

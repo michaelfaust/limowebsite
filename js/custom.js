@@ -123,7 +123,6 @@ $(document).ready(function() {
         boxClass: 'wow', // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
         mobile: false, // trigger animations on mobile devices (true is default)
-        live: true
     });
     wow.init();
 
