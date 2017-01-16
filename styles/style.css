@@ -402,7 +402,6 @@ hr {
   min-height: 456px;
   padding: 25px 40px;
   margin-bottom: 30px;
-  background-color: #eee;
 }
 
 .price-box h3 {
@@ -552,7 +551,7 @@ hr {
 }
 
 #about .col-sm-5:last-child img {
-  max-height: 85%;
+  max-width: 85%;
   margin: auto;
 }
 
