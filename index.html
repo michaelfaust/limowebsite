@@ -20,12 +20,24 @@
   <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
   <!--custom css file-->
   <link href="/styles/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/jquery.countdown.css" />
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
     <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <script type='text/javascript'>window.BWEUM||(BWEUM={});BWEUM.info = {"stand":true,"agentType":"browser","agent":"bi-collector.oneapm.com/static/js/bw-send-411.4.9.js","beaconUrl":"bi-collector.oneapm.com/beacon","licenseKey":"BQ3zr~AuQeJARYJR","applicationID":2290555};</script><script type="text/javascript" src="//bi-collector.oneapm.com/static/js/bw-loader-411.4.9.js"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?82b72d9fe0a07851d21525e53b0d0ae2";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
 </head>
 
 <body data-spy="scroll">
@@ -74,7 +86,7 @@
                         New Way To Eat | <b>年轻人，吃饭酷一点</b>
                     </p>
                     <div class="scroll-to banner-buttons">
-                        <a href="#newsletter" class="btn btn-lg btn-skin btn-radius">加入全球100limoer计划</a>
+                        <a href="#newsletter" class="btn btn-lg btn-skin btn-radius">全球100limoer计划</a>
                     </div>
                 </div>
             </div>
@@ -382,8 +394,8 @@
       <!-- <div class="space-20"></div>
       <div class="text-center scroll-to wow animated fadeInUp" data-wow-delay="0.3s">
           <a href="#nrv" class="btn btn-radius btn-dark btn-lg">Learn more</a>
-      </div>
-    </div> -->
+      </div> -->
+    </div>
   </section>
   <hr>
   <!--pricing start-->
@@ -417,7 +429,7 @@
         <!--price col end-->
         <div class="col-sm-4">
           <div class="price-box text-center wow animated fadeInUp" data-wow-delay="0.2s">
-            <img src="./images/bag.png" alt="" class="img-responsive">
+            <img src="./images/smallbag.png" alt="" class="img-responsive">
             <h3><b>LIMO Cool</b></h3> 36g 袋装版
             <p>
               每份口袋装包含了三分之一餐的LIMO，体积小巧，便于携带，你可以根据每餐的实际需求自由搭配LIMO。
@@ -446,56 +458,24 @@
   <section id="newsletter">
     <div class="container">
         <div class="row vertical-align-child">
-            <div class="col-sm-6 desc wow animated fadeInLeft" data-wow-delay="0.1s">
+            <div class="col-sm-6 desc wow">
                   <h3>食尚先驱 100 LIMOer 召集令</h3>
                   <br>
                   <p>LIMO全球首发系列活动</p>
-                  <p>活动时间：2017.01.15-2017.01.31</p>
+                  <p>活动时间：2017.01.28-2017.02.14</p>
                   <p>活动内容：LIMOSHAKE Zen 免费试吃</p>
                   <br>
-                  <p>经过一年多的研发和设计，LIMO携三款新品终于面世。本次活动征集100名有态度的LIMOer，免费体验的LIMO的匠心之作。用户在右侧表格填写相关资料即可进行申请，我们会在所有申请用户中抽取100名幸运用户，成为全球第一批LIMOer，每人会收到我们赠送的108g LIMOSHAKE Zen新品2瓶。</p>
+                  <p>截至目前，LIMO免费试吃活动申请已经结束。</p>
+                  <p>我们会在所有申请的用户中抽取100名幸运用户，</p>
+                  <p>送上两瓶最新的LIMOSHAKE ZEN。</p>
+                  <p>中奖名单将于2017年2月18日在官网、微信同时公布。</p>
             </div>
-            <div class="col-sm-5 tryform wow animated fadeInRight" data-wow-delay="0.2s">
+            <div class="col-sm-5 tryform wow">
               <div class="applyform animated">
-                <div class="flex-hrz">
-                  <p class="flex-full">
-                    <select class="form-control gender">
-                        <option>性别</option>
-                        <option>男</option>
-                        <option>女</option>
-                    </select>
-                  </p>
-                  <p class="flex-full">
-                    <select class="form-control age">
-                        <option>年龄</option>
-                        <option>18~25</option>
-                        <option>26~35</option>
-                        <option>36~45</option>
-                        <option>46~55</option>
-                        <option>56~</option>
-                    </select>
-                  </p>
+                <div class="center">
+                  <h3>距离名单公布还有：</h3><br>
+                  <div id="countdown"></div>
                 </div>
-                <p class="flex-hrz">
-                    <input type="tel" class="form-control phone flex-full" name="email" placeholder="手机">
-                </p>
-                <p class="flex-hrz">
-                    <input type="text" class="form-control phone flex-full" name="city" placeholder="城市">
-                </p>
-                <p class="flex-hrz">
-                    <input type="text" class="form-control phone flex-full" name="email" placeholder="职业">
-                </p>
-                <p class="flex-hrz">
-                    <input type="text" class="form-control phone flex-full" name="email" placeholder="最爱的运动">
-                </p>
-                <p class="flex-hrz">
-                    <input type="text" class="form-control phone flex-full" name="email" placeholder="最爱的食物">
-                </p>
-                <div class="space-30"></div>
-                <div id="applyBtn" class="btn btn-lg btn-radius">立即申请</div>
-              </div>
-              <div class="applymsg animated">
-              <h3><i class="fa fa-check" aria-hidden="true"></i>恭喜，提交成功！</h3>
               </div>
             </div>
           </div>
@@ -573,14 +553,14 @@
       <div class="row vertical-align-child">
         <div class="col-sm-6">
             <div class="footer-bottom">
-              <span>沪 ICP 备14048402号-3 | <i class="fa fa-map-marker"></i> 上海市奉贤区金海公路3660号4幢318室</span>
+              <span>沪ICP备16031506号-1 | <i class="fa fa-map-marker"></i> 上海市奉贤区金海公路3660号4幢318室</span>
             </div>
         </div>
         <div class="col-sm-6">
             <div class="footer-bottom">
               <span>联系我们：</span>
-              <span><i class="fa fa-phone"></i> <a href="tel:18501735075">18501735075</a>  |  </span>
-              <span> <i class="fa fa-envelope"></i> <a href="mailto:limo@limoshake.com">limo@limoshake.com</a></span>
+              <span><i class="fa fa-phone"></i> <a href="tel:021-61527171">021-61527171</a>  |  </span>
+              <span> <i class="fa fa-envelope"></i> <a href="mailto:enjoy@limoshake.com">enjoy@limoshake.com</a></span>
             </div>
         </div>
       </div>
@@ -593,6 +573,7 @@
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/smoothscroll.js"></script>
   <script src="/js/wow.min.js"></script>
+  <script src="/js/jquery.countdown.js"></script>
   <!-- <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script> -->
   <!--   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"
   integrity="sha256-lnH4vnCtlKU2LmD0ZW1dU7ohTTKrcKP50WA9fa350cE="

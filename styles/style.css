@@ -45,12 +45,12 @@ a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
-  color: #f9b015;
+  color: #108ee9;
 }
 a:hover, a:focus {
   text-decoration: none;
   outline: 0 !important;
-  color: #f9b015;
+  color: #108ee9;
 }
 
 button {
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr.separator {
-  border-top: 1px solid #f9b015;
+  border-top: 1px solid #108ee9;
   margin: 10px auto;
   width: 80px;
 }
@@ -195,10 +195,14 @@ hr {
   line-height: 20px !important;
 }
 .center-title i {
-  color: #f9b015;
+  color: #108ee9;
   font-size: 30px;
   margin-bottom: 20px;
   display: block;
+}
+
+.center {
+  text-align: center;
 }
 
 /***buttons***/
@@ -241,7 +245,7 @@ hr {
 }
 .btn-dark:hover, .btn-dark:focus {
   color: #fff;
-  background-color: #f9b015;
+  background-color: #108ee9;
 }
 
 .btn-default {
@@ -309,7 +313,7 @@ hr {
   font-weight: 500;
 }
 .header-v1 .navbar-nav > li > a:hover {
-  color: #f9b015;
+  color: #108ee9;
 }
 
 .header-v1.sticky .navbar-nav > li > a {
@@ -317,16 +321,16 @@ hr {
 }
 
 .header-v1.sticky .navbar-nav > li > a:hover {
-  color: #f9b015;
+  color: #108ee9;
 }
 
 .header-v1 .navbar-nav > .active > a, .header-v1 .navbar-nav > .active > a:focus, .header-v1 .navbar-nav > .active > a:hover {
-  color: #f9b015;
+  color: #108ee9;
   background-color: transparent;
 }
 
 .header-v1.sticky .navbar-nav > .active > a, .header-v1.sticky .navbar-nav > .active > a:focus, .header-v1.sticky .navbar-nav > .active > a:hover {
-  color: #f9b015;
+  color: #108ee9;
   background-color: transparent;
 }
 
@@ -353,7 +357,7 @@ hr {
   }
 
   .navbar-right li.button-nav a {
-    background-color: #f9b015;
+    background-color: #108ee9;
     color: #fff;
     padding: 8px 15px;
     margin-top: 12px;
@@ -493,7 +497,7 @@ hr {
   text-transform: uppercase;
 }
 .footer .footer-bottom .list-inline li a:hover {
-  color: #f9b015;
+  color: #108ee9;
 }
  */
 /* #home .row {
@@ -501,7 +505,7 @@ hr {
 } */
 
 .banner-intro {
-  background: url(http://oje3wjypj.bkt.clouddn.com/images/bg.jpg) no-repeat;
+  background: url(http://oje3wjypj.bkt.clouddn.com/images/bg1.jpg) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
