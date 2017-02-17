@@ -27,7 +27,7 @@ body, html {
 }
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,Neue Haas Grotesk Text Pro,Arial Nova,Segoe UI,Helvetica Neue,\.PingFang SC,PingFang SC,Microsoft YaHei,Microsoft JhengHei,Source Han Sans SC,Noto Sans CJK SC,Source Han Sans CN,Noto Sans SC,Source Han Sans TC,Noto Sans CJK TC,Hiragino Sans GB,sans-serif;
+  font-family: BlinkMacSystemFont,Neue Haas Grotesk Text Pro,Arial Nova,Segoe UI,Helvetica Neue,\.PingFang SC,PingFang SC,Microsoft YaHei,Microsoft JhengHei,Source Han Sans SC,Noto Sans CJK SC,Source Han Sans CN,Noto Sans SC,Source Han Sans TC,Noto Sans CJK TC,Hiragino Sans GB,sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -45,12 +45,12 @@ a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
-  color: #108ee9;
+  color: #0f88eb;
 }
 a:hover, a:focus {
   text-decoration: none;
   outline: 0 !important;
-  color: #108ee9;
+  color: #0f88eb;
 }
 
 button {
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr.separator {
-  border-top: 1px solid #108ee9;
+  border-top: 1px solid #0f88eb;
   margin: 10px auto;
   width: 80px;
 }
@@ -195,7 +195,7 @@ hr {
   line-height: 20px !important;
 }
 .center-title i {
-  color: #108ee9;
+  color: #0f88eb;
   font-size: 30px;
   margin-bottom: 20px;
   display: block;
@@ -245,7 +245,7 @@ hr {
 }
 .btn-dark:hover, .btn-dark:focus {
   color: #fff;
-  background-color: #108ee9;
+  background-color: #0f88eb;
 }
 
 .btn-default {
@@ -313,7 +313,7 @@ hr {
   font-weight: 500;
 }
 .header-v1 .navbar-nav > li > a:hover {
-  color: #108ee9;
+  color: #0f88eb;
 }
 
 .header-v1.sticky .navbar-nav > li > a {
@@ -321,16 +321,16 @@ hr {
 }
 
 .header-v1.sticky .navbar-nav > li > a:hover {
-  color: #108ee9;
+  color: #0f88eb;
 }
 
 .header-v1 .navbar-nav > .active > a, .header-v1 .navbar-nav > .active > a:focus, .header-v1 .navbar-nav > .active > a:hover {
-  color: #108ee9;
+  color: #0f88eb;
   background-color: transparent;
 }
 
 .header-v1.sticky .navbar-nav > .active > a, .header-v1.sticky .navbar-nav > .active > a:focus, .header-v1.sticky .navbar-nav > .active > a:hover {
-  color: #108ee9;
+  color: #0f88eb;
   background-color: transparent;
 }
 
@@ -357,7 +357,7 @@ hr {
   }
 
   .navbar-right li.button-nav a {
-    background-color: #108ee9;
+    background-color: #0f88eb;
     color: #fff;
     padding: 8px 15px;
     margin-top: 12px;
@@ -497,7 +497,7 @@ hr {
   text-transform: uppercase;
 }
 .footer .footer-bottom .list-inline li a:hover {
-  color: #108ee9;
+  color: #0f88eb;
 }
  */
 /* #home .row {
@@ -676,6 +676,18 @@ hr {
   color: #fff;
 }
 
+#nrv .vertical-align-child {
+  background: url(http://oje3wjypj.bkt.clouddn.com/images/nrv.jpeg) no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+#nrv .col-sm-12 {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
 /* #newsletter .container .desc {
   border-right: 1px solid #fff;
 } */
@@ -685,7 +697,7 @@ hr {
 }
 
 @media (min-width: 768px) {
-  #newsletter .container .desc, #newsletter .container .tryform {
+  #newsletter .container .desc {
     padding: 100px;
   }
 }
@@ -791,7 +803,7 @@ hr {
 }
 
 .spinner > div {
-  background-color: #42a3ee;
+  background-color: #000;
   height: 100%;
   width: 6px;
   display: inline-block;

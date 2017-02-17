@@ -65,12 +65,10 @@ $(document).ready(function() {
     });
     wow.init();
 
-    $('#applyBtn').click(function() {
-        location.href = "https://fa.fanqier.cn/f/dmfbzl";
-    });
-
-    var ts = new Date(2017, 01, 18);
+    var ts = new Date(2017, 01, 18, 20, 0, 0);
     $('#countdown').countdown({
         timestamp: ts,
+        callback: function(days, hours, minutes, seconds){
+        }
     });
 });

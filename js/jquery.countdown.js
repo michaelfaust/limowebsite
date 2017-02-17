@@ -76,8 +76,6 @@
 	function init(elem, options){
 		elem.addClass('countdownHolder');
 
-		var labels = ['天','时','分','秒'];
-
 		// Creating the markup inside the container
 		$.each(['Days','Hours','Minutes','Seconds'],function(i){
 			$('<span class="count'+this+'">').html(
@@ -89,10 +87,8 @@
 				</span>'
 			).appendTo(elem);
 
-			elem.append('<span class="countDiv">'+labels[i]+'</span>');
-
-			if(this == 'Hours') {
-				elem.append('<br>');
+			if(this!="Seconds"){
+				elem.append('<span class="countDiv countDiv'+i+'"></span>');
 			}
 		});
 

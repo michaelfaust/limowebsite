@@ -1,7 +1,7 @@
 .countdownHolder{
-	width: 100%;
+	width:100%;
 	margin:0 auto;
-	font: 35px/1.5 'Open Sans Condensed',sans-serif;
+	font: 30px/1.5 'Open Sans Condensed',sans-serif;
 	text-align:center;
 	letter-spacing:-3px;
 }
@@ -58,9 +58,26 @@
 
 
 .countDiv{
-	display: inline-block;
-	height: 1.6em;
-	overflow: hidden;
-	position: relative;
-	width: 1.05em;
+	display:inline-block;
+	width:16px;
+	height:1.6em;
+	position:relative;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#dad8d8;
+	border-radius:50%;
+	left:50%;
+	margin-left:-3px;
+	top:0.5em;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countDiv:after{
+	top:0.9em;
 }
