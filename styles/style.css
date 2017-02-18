@@ -434,6 +434,12 @@ hr {
   padding: 60px;
 }
 
+@media (max-width: 414px) {
+  .footer {
+    text-align: center;
+  }
+}
+
 .footer h2 {
   color: #fff;
   margin-bottom: 20px;
@@ -684,8 +690,9 @@ hr {
 }
 
 #nrv .col-sm-12 {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
+  padding: 20px 20px 0 20px;
 }
 
 /* #newsletter .container .desc {

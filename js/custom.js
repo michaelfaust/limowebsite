@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(window).load(function() {
       $('.spinner').hide();
-      // $('#home .row').show();
+      $('#home .row').show();
     });
 
     $(window).scroll(function() {
@@ -65,7 +65,7 @@ $(document).ready(function() {
     });
     wow.init();
 
-    var ts = new Date(2017, 01, 18, 20, 0, 0);
+    var ts = new Date(2017, 01, 19, 10, 0, 0);
     $('#countdown').countdown({
         timestamp: ts,
         callback: function(days, hours, minutes, seconds){
