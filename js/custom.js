@@ -65,10 +65,16 @@ $(document).ready(function() {
     });
     wow.init();
 
-    var ts = new Date(2017, 01, 19, 10, 0, 0);
+    var ts = new Date(2017, 01, 19, 11, 00, 0);
     $('#countdown').countdown({
         timestamp: ts,
         callback: function(days, hours, minutes, seconds){
+            if(days == 0 && hours == 0 && minutes == 0 && seconds == 0) {
+                $('#countdown').hide();
+                $('.applyform p').hide();
+                $('.applyform h4').text('请扫描下方二维码查看中奖信息');
+                $('.applyform img').show();
+            }
         }
     });
 });
