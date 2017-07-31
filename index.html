@@ -1,547 +1,189 @@
-<!DOCTYPE html>
-<html lang="en" class="js csstransitions">
-
+<!doctype html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="keywords" content="代餐粉,生酮饮食,营养,健康,能量餐,完全食,LIMO,乐慕,limo,limoshake">
-  <meta name="description" content="乐慕LIMO-改变你的饮食方式">
-  <meta name="author" content="LIMO" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>LIMO - Less is more</title>
-  <!-- Bootstrap -->
-  <link href="/styles/bootstrap.min.css" rel="stylesheet">
-  <!--plugins-->
-  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
-  <!--custom css file-->
-  <link href="/styles/style.min.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-  <script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?82b72d9fe0a07851d21525e53b0d0ae2";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-  </script>
+<title>LIMO</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/style.min.css" rel="stylesheet" type="text/css">
 
+<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
 </head>
+<body>
+<div id="preloader"></div>
+<header class="header" id="header"><!--header-start-->
+  <div class="container">
+      <figure class="logo animated fadeInDown delay-07s">
+          <a href="#"><img src="img/logo.png" alt=""></a>
+        </figure>
+        <h1 class="animated fadeInDown delay-07s">Welcome To LIMO Lab</h1>
+        <ul class="we-create animated fadeInUp delay-1s">
+          <li>重新定义吃饭</li>
+        </ul>
+            <a class="link animated fadeInUp delay-1s servicelink" href="#service">开始探索</a>
+    </div>
+</header><!--header-end-->
 
-<body data-spy="scroll">
-  <div class="spinner">
-    <div class="rect1"></div>
-    <div class="rect2"></div>
-    <div class="rect3"></div>
-    <div class="rect4"></div>
-    <div class="rect5"></div>
+<nav class="main-nav-outer" id="test"><!--main-nav-start-->
+  <div class="container">
+        <ul class="main-nav">
+            <li class="active"><a href="#test">关于</a><p></p></li>
+            <li><a href="#Portfolio">发现</a><p></p></li>
+            <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
+            <li><a href="./nrv.html">营养</a><p></p></li>
+            <li><a href="#team">订购</a><p></p></li>
+        </ul>
+        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+    </div>
+</nav><!--main-nav-end-->
+
+
+
+<section class="main-section" id="service"><!--main-section-start-->
+  <div class="container">
+      <h1>我，来自未来</h1>
+      <h3>触碰未来最好的方式，不是看到，而是得到</h3>
+      <h3>LIMO带给你未来食物的真实体验，提供你所需的全部营养</h3>
+      <h3>而你需要做的，只是迈步向前</h3>
+
   </div>
-  <!-- Static navbar -->
-  <nav class="navbar header-v1 header-transparent navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header scroll-to">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img src="/images/logo.png">
-            </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav scroll-to navbar-nav navbar-right">
-                <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#ingredient">原料</a></li>
-                <li><a href="#nrv">营养</a></li>
-                <li><a href="#products">产品</a></li>
-            </ul>
-        </div>
-        <!--/.nav-collapse -->
-    </div>
-    <!--/.container-fluid -->
-  </nav>
-  <!--navigation end here-->
-  <section id="home" class="banner-intro">
-    <div class="banner-inner">
-        <div class="container">
-            <div class="row" style="display: none">
-                <div class="col-sm-8  col-sm-offset-2 text-center wow  bounceIn animated">
-                    <h1>乐慕 LIMO</h1>
-                    <p class="lead">
-                        New Way To Eat | <b>年轻人，吃饭酷一点</b>
-                    </p>
-                    <div class="scroll-to banner-buttons">
-                        <a href="#newsletter" class="btn btn-lg btn-skin btn-radius">全球100limoer计划</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-  <section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 center-title">
-                <h2><span>关于 · About</span></h2>
-                <p>
-                    LIMO源自less is more
-                    <br> 这是著名的建筑师路德维希·密斯·凡德罗大师说过的一句话
-                    <br> 意思是简单的东西往往给人带来更多
-                </p>
-                <!-- <p>我们目前推出了三种包装，为了让你在任何情况下都能尽享LIMO</p> -->
-            </div>
-        </div>
-        <div class="row vertical-align-child">
-            <div class="col-sm-5 wow animated fadeInLeft" data-wow-delay="0.1s">
-                <h3>你能想到最IN的吃饭方式是？</h3>
-                <p>
-                  37次配方升级，12次口味调整。牛奶，豌豆，椰子，葵花籽，亚麻籽，奇亚籽，15种维生素和矿物质，只是LIMO的一小部分。我们根据国人日常膳食比例，精心设计配方，挑选原料，为了让你感受食物的理性面。</p>
-                  <p>我们不妄想变革饮食方式，我们只是觉得，忙成 🐶 的加班间隙，大汗淋漓的运动后，或者是大肆宵夜后的第二天早上，你会，爱上LIMO。
-                </p>
-            </div>
-            <div class="col-sm-5 wow animated fadeInRight" data-wow-delay="0.2s">
-                <img src="http://oje3wjypj.bkt.clouddn.com/images/about.JPG" class="img-responsive" alt="">
-            </div>
-        </div>
-    </div>
-  </section>
-  <hr>
-  <!--ingredient-->
-  <section id="ingredient">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 center-title">
-                <h2><span>原料 · Ingredient</span></h2>
-                <p>
-                  LIMO追求科学和艺术的结合<br>
-                  严谨专业的营养配方和出色柔和的口感完美结合<br>
-                  新一代食物已经出现
-                </p>
-            </div>
-        </div>
-        <!--center title row end-->
-        <div class="row vertical-align-child">
-            <div class="col-sm-3">
-                <div class="gallery wow fadeInDown animated" data-wow-delay="0.1s">
-                    <img src="./images/cow.jpg" alt="" class="img-responsive">
-                    <div class="gallery-overlay">
-                        <div>
-                            <h4>牛奶蛋白和乳清蛋白</h4>
-                            为了均衡口感，饱腹感，氨基酸种类和不同的使用场景，LIMO中同时含有恒天然的牛奶蛋白和乳清蛋白，前者常用于奶粉而后者常用于营养补充产品。两者都提炼自牛奶，是常见的蛋白质和钙质来源，吸收利用率很高。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--col end-->
-            <div class="col-sm-3">
-                <div class="gallery wow fadeInDown animated" data-wow-delay="0.2s">
-                    <img src="./images/pea.jpg" alt="" class="img-responsive">
-                    <div class="gallery-overlay">
-                        <div>
-                            <h4>豌豆蛋白</h4>
-                            豌豆蛋白是一种新兴植物蛋白，因为其非转基因性，近年在欧美市场上广受欢迎，开始逐渐取代大豆蛋白。豌豆蛋白有非常低的致敏率，人体消化率达到98%，非常容易吸收，饱腹感强，有助于控制体重。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--col end-->
-            <div class="col-sm-3">
-                <div class="gallery wow fadeInDown animated" data-wow-delay="0.3s">
-                    <img src="./images/yezi.jpg" alt="" class="img-responsive">
-                    <div class="gallery-overlay">
-                        <div>
-                            <h4>椰子</h4>
-                            椰子油被誉为最健康的食用油，在热带海岛地区有2000多年的食用历史，椰子不仅富含营养价值，还具有丰富的药用价值，从丰富的中链脂肪酸中提炼的MCT被广泛用于改善脑部功能，菲律宾人称其为“瓶子里的药店”。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--col end-->
-            <div class="col-sm-3">
-                <div class="gallery wow fadeInDown animated" data-wow-delay="0.4s">
-                    <img src="./images/fruit.jpg" alt="" class="img-responsive">
-                    <div class="gallery-overlay">
-                        <div>
-                            <h4>维生素和矿物质</h4>
-                            为了更全面的营养，我们为国人量身定制了维生素矿物质营养强化包，并委托拥有17年营养定制化方案生产经验的上海励成为我们打造了专属产品。15种加强维生素和矿物质涵盖了一天所需的微量元素，让每天都充满活力。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--col end-->
-        </div>
-        <div class="row vertical-align-child">
-            <div class="col-sm-3">
-                <div class="gallery wow fadeInDown animated" data-wow-delay="0.5s">
-                    <img src="./images/chia.jpg" alt="" class="img-responsive">
-                    <div class="gallery-overlay">
-                        <div>
-                            <h4>奇雅籽</h4>
-                            奇雅籽别名芡欧鼠尾草籽，是已知含有ω-3脂肪酸最丰富的植物，含量为鱼油的9倍。奇雅籽富含优质蛋白、纤维素和天然抗氧化剂，矿物质含量也高过其他食物。因为其消炎、调节三高等多种保健作用，被誉为”神奇的种子“。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--col end-->
-            <div class="col-sm-3">
-                <div class="gallery wow fadeInDown animated" data-wow-delay="0.6s">
-                    <img src="./images/guwu.jpg" alt="" class="img-responsive">
-                    <div class="gallery-overlay">
-                        <div>
-                            <h4>小麦和燕麦</h4>
-                            LIMO的碳水化合物主要由小麦和燕麦提供。小麦从两河流域文明开始与人类共存，目前仍是全球产量第二大的食物。燕麦是从欧美引入国内的健康早餐代表，其纤维含量高，饱腹感强，升糖指数低，有助于保持身材。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--col end-->
-            <div class="col-sm-3">
-                <div class="gallery wow fadeInDown animated" data-wow-delay="0.7s">
-                    <img src="./images/yama.jpg" alt="" class="img-responsive">
-                    <div class="gallery-overlay">
-                        <div>
-                            <h4>亚麻籽</h4>
-                            中国是亚麻的原产地之一，中华民族有2000多年食用亚麻的历史。亚麻含有现代饮食结构中普遍缺乏的丰富的α-亚麻酸，具有调节三高，抗癌，抗炎症，提升大脑健康的医学效果。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--col end-->
-            <div class="col-sm-3">
-                <div class="gallery wow fadeInDown animated" data-wow-delay="0.8s">
-                    <img src="./images/sunflower.jpg" alt="" class="img-responsive">
-                    <div class="gallery-overlay">
-                        <div>
-                            <h4>葵花籽</h4>
-                            葵花籽是常见的食用油来源，含有较高的LA（也称为亚油酸，属于ω-6不饱和脂肪酸，是不可在体内合成的“必须脂肪酸”）。它可以帮助调节血液凝结、促进细胞增殖、组织修复、帮助免疫系统更好地工作。
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--col end-->
-        </div>
-    </div>
-  </section>
-  <hr>
-  <!--products-->
-  <section id="nrv">
-    <div class="container">
-      <div class="row">
-          <div class="col-sm-6 col-sm-offset-3 center-title">
-            <h2><span>营养 · NRV</span></h2>
-              <p>
-                  出于对产品的自信和对LIMOer的负责态度
-                  <br> 作为未来食品的我们，引领完全透明，科学的营养制订原则
-                  <br> 100%开源的LIMO营养成分让人们吃的放心
-              </p>
-          </div>
-      </div>
-      <div class="row vertical-align-child">
-        <div class="col-sm-12">
-          <div class="col-sm-6 wow animated fadeInLeft" data-wow-delay="0.1s">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>项目</th>
-                  <th>每100g</th>
-                  <th>营养参考值%</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>能量</td>
-                  <td>1964kJ</td>
-                  <td>23%</td>
-                </tr>
-                <tr>
-                  <td>蛋白质</td>
-                  <td>21.2g</td>
-                  <td>35%</td>
-                </tr>
-                <tr>
-                  <td>脂肪</td>
-                  <td>20.7g</td>
-                  <td>35%</td>
-                </tr>
-                <tr>
-                  <td>碳水化合物</td>
-                  <td>46.9g</td>
-                  <td>16%</td>
-                </tr>
-                <tr>
-                  <td>膳食纤维</td>
-                  <td>5.1g</td>
-                  <td>20%</td>
-                </tr>
-                <tr>
-                  <td>钠</td>
-                  <td>235mg</td>
-                  <td>12%</td>
-                </tr>
-                <tr>
-                  <td>维生素A</td>
-                  <td>400µg RE</td>
-                  <td>50%</td>
-                </tr>
-                <tr>
-                  <td>维生素D</td>
-                  <td>2.0µg</td>
-                  <td>40%</td>
-                </tr>
-                <tr>
-                  <td>维生素E</td>
-                  <td>7.60mg α-TE</td>
-                  <td>54%</td>
-                </tr>
-                <tr>
-                  <td>维生素B1</td>
-                  <td>0.90mg</td>
-                  <td>64%</td>
-                </tr>
-                <tr>
-                  <td>维生素B2</td>
-                  <td>0.90mg</td>
-                  <td>64%</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div style="height: 464px;" class="col-sm-6 wow animated fadeInRight" data-wow-delay="0.1s">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>项目</th>
-                  <th>每100g</th>
-                  <th>营养参考值%</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>维生素B6</td>
-                  <td>0.70mg</td>
-                  <td>50%</td>
-                </tr>
-                <tr>
-                  <td>维生素B12</td>
-                  <td>1.00µg</td>
-                  <td>41%</td>
-                </tr>
-                <tr>
-                  <td>维生素C</td>
-                  <td>100.0mg</td>
-                  <td>32%</td>
-                </tr>
-                <tr>
-                  <td>烟酸</td>
-                  <td>11.00mg</td>
-                  <td>79%</td>
-                </tr>
-                <tr>
-                  <td>叶酸</td>
-                  <td>150µgDEF</td>
-                  <td>38%</td>
-                </tr>
-                <tr>
-                  <td>泛酸</td>
-                  <td>2.20mg</td>
-                  <td>44%</td>
-                </tr>
-                <tr>
-                  <td>镁</td>
-                  <td>130mg</td>
-                  <td>43%</td>
-                </tr>
-                <tr>
-                  <td>钙</td>
-                  <td>253mg</td>
-                  <td>32%</td>
-                </tr>
-                <tr>
-                  <td>铁</td>
-                  <td>9.5mg</td>
-                  <td>63%</td>
-                </tr>
-                <tr>
-                  <td>锌</td>
-                  <td>6.00mg</td>
-                  <td>40%</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <hr>
-  <!--pricing start-->
-  <section id="products">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 center-title">
-            <h2><span>产品 · Products</span></h2>
-            <p>
-                是时候展现真正的技术了
-                <br> LIMO现推出三款产品，方便人们在各种场景条件下使用
-                <br> 每一款产品都极具匠心
-                <br>
-            </p>
-        </div>
-      </div>
-      <!--center title row end-->
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="price-box text-center wow animated fadeInUp" data-wow-delay="0.1s">
-            <img src="./images/bottle.png" alt="" class="img-responsive">
-            <h3><b>LIMO Zen</b></h3>
-            <h5>108g 瓶装版本</h5>
-            <p>
-            如果你不想洗杯子，还可以试试我们的瓶装版LIMO。我们在网站里为你准备了一些空瓶子的使用技巧，不要轻易丢掉它们哦。
-            </p>
-          </div>
-          <!--price box end-->
-        </div>
-        <!--price col end-->
-        <div class="col-sm-4">
-          <div class="price-box text-center wow animated fadeInUp" data-wow-delay="0.2s">
-            <img src="./images/smallbag.png" alt="" class="img-responsive">
-            <h3><b>LIMO Cool</b></h3> 36g 袋装版
-            <p>
-              每份口袋装包含了三分之一餐的LIMO，体积小巧，便于携带，你可以根据每餐的实际需求自由搭配LIMO。
-            </p>
-          </div>
-          <!--price box end-->
-        </div>
-        <!--price col end-->
-        <div class="col-sm-4">
-          <div class="price-box text-center wow animated fadeInUp" data-wow-delay="0.3s">
-            <img src="./images/bigbag.png" alt="" class="img-responsive">
-            <h3><b>LIMO Hug</b></h3> 432g 袋装版
-            <p>
-              每份一日装包含了四餐LIMO的量，适合用于办公室和家庭，我们为你准备了量勺。
-            </p>
-          </div>
-          <!--price box end-->
-        </div>
-        <!--price col end-->
-      </div>
-    </div>
-  </section>
-  <hr>
-  <section id="newsletter">
-    <div class="container">
-        <div class="row vertical-align-child">
-          <div class="col-sm-6 desc wow">
-                <h3>Less is More | 超级食物试吃活动</h3>
-                <br>
-                <p>申请时间：2017.01.28-2017.02.14</p>
-                <p>活动名额：100人</p>
-                <br>
-                <p>截至目前，LIMO免费试吃活动申请已经结束。</p>
-                <p>我们会在所有申请的用户中抽取100名幸运用户，</p>
-                <p>送上两瓶最新的LIMOSHAKE ZEN。</p>
-          </div>
-          <div class="col-sm-5 tryform wow">
-            <div class="applyform animated">
-              <div class="center">
-                <h4>请使用微信扫描下方二维码查看中奖信息</h4>
-                <br>
-                <img style="width: 150px" src="./images/activity.png">
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-  </section>
-  <!--footer start-->
-  <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <h2>中国人自己的超级食物</h2>
-                <ul class="list-unstyled clearfix">
-                    <li class="clearfix">
-                        <span>
-                        LIMO的每一款食品都包含人体所需的<br>
-                        22种主要营养成分，15种维生素矿物<br>
-                        质，7种自然界最优质的食物。<br><br>
-                        让简便快捷的全营养餐食不再是梦想！
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-4">
-              <div class="row">
-                <div class="col-xs-6">
-                    <h2>关于我们</h2>
-                    <ul class="list-unstyled clearfix">
-                        <li class="clearfix">
-                            <a href="#about">关于LIMO</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-6">
-                    <h2>产品服务</h2>
-                    <ul class="list-unstyled clearfix">
-                        <li class="clearfix">
-                            <a href="#nrv">开放营养表</a>
-                        </li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-            <!--col4 end-->
-            <div class="col-sm-5 qrcode">
-                <img src="./images/qrcode.jpg">
-                <h2>LIMO官方微信公众号</h2>
-            </div>
-            <!--col4 end-->
-        </div>
-    </div>
-  </footer>
-  <!--footer end-->
-  <section class="copyright">
-    <div class="container">
-      <!--row end-->
-      <div class="row vertical-align-child">
-        <div class="col-sm-6">
-            <div class="footer-bottom">
-              <span>沪ICP备16031506号-1 | <i class="fa fa-map-marker"></i> 上海市奉贤区金海公路3660号4幢318室</span>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="footer-bottom">
-              <span>联系我们：</span>
-              <span><i class="fa fa-phone"></i> <a href="tel:021-61527171">021-61527171</a>  |  </span>
-              <span> <i class="fa fa-envelope"></i> <a href="mailto:enjoy@limoshake.com">enjoy@limoshake.com</a></span>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/jquery-migrate.min.js" type="text/javascript"></script>
-  <script src="/js/jquery.easing.1.3.min.js" type="text/javascript"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/smoothscroll.js"></script>
-  <script src="/js/wow.min.js"></script>
-  <script src="/js/custom.min.js" type="text/javascript"></script>
-</body>
+</section><!--main-section-end-->
 
+
+
+<section class="main-section alabaster"><!--main-section alabaster-start-->
+  <div class="container">
+    <div class="row">
+      <figure class="col-lg-6 col-sm-4 wow fadeInLeft">
+        <img src="img/bottle.jpeg" alt="">
+      </figure>
+      <div class="col-lg-6 col-sm-8 featured-work">
+          <h1>我们能做的</h1>
+          <div class="featured-box">
+            <div class="featured-box-col2 wow fadeInRight delay-02s">
+                  <h3>极致简约</h3>
+                  <p>一餐的所有营养，浓缩在一瓶108g的粉末之中</p>
+              </div>
+          </div>
+          <div class="featured-box">
+            <div class="featured-box-col2 wow fadeInRight delay-04s">
+                  <h3>极致方便</h3>
+                  <p>你不用再担心瓶子的事，我们已经为你做好准备</p>
+              </div>
+          </div>
+          <div class="featured-box">
+            <div class="featured-box-col2 wow fadeInRight delay-06s">
+                  <h3>极致快捷</h3>
+                  <p>注水、摇匀、饮用，20s，一顿营养餐，就是那么快</p>
+              </div>
+          </div>
+          <a class="Learn-More" href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section><!--main-section alabaster-end-->
+
+<section class="main-section paddind" id="Portfolio"><!--main-section-start-->
+  <div class="container">
+      <h1>均衡，全面</h1>
+      <h3>牛奶，豌豆，椰子，葵花籽，亚麻籽，奇亚籽，15种维生素和矿物质</h3>
+      <h3>完美只在一瞬间  而数字可以帮你无限接近它</h3>
+      <h3>37次配方升级  12次口味调整  量化打造的营养配方</h3>
+      <h3>展现给你的，是食物的理性面</h3>
+  </div>
+</section><!--main-section-end-->
+
+
+<section class="main-section client-part" id="client"><!--main-section client-part-start-->
+    <div class="container">
+    <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
+    <div class="row">
+      <div class="col-lg-12">
+          <p class="client-part-haead wow fadeInDown delay-05">limoshake是非常方便和健康的食物，我以前忙的时候会吃些不健康的食物填饱肚子，现在不用再担心这一点了。在家，在办公室，出差在外我都会随身携带limoshake。</p>
+        </div>
+    </div>
+    <ul class="client wow fadeIn delay-05s">
+      <li><a href="#">
+          <img src="img/client-pic1.jpg" alt="">
+            <h3>James Bond</h3>
+            <span>创业公司cto</span>
+        </a></li>
+    </ul>
+    </div>
+</section><!--main-section client-part-end-->
+<section class="main-section team" id="team"><!--main-section team-start-->
+  <div class="container">
+        <h1>我们的用户</h1>
+        <div class="team-leader-block clearfix">
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-03s">
+                    <div class="team-leader-shadow"><a href="#"></a></div>
+                    <img src="img/team-leader-pic1.jpg" alt="">
+                    <ul>
+                        <li><a href="#" class="fa-twitter"></a></li>
+                        <li><a href="#" class="fa-facebook"></a></li>
+                        <li><a href="#" class="fa-pinterest"></a></li>
+                        <li><a href="#" class="fa-google-plus"></a></li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-03s">Walter White</h3>
+                <span class="wow fadeInDown delay-03s">著名自媒体写手</span>
+                <p class="wow fadeInDown delay-03s">我暂时还不能接受完全不吃传统食物，但是我觉得limoshake作为早餐非常合适，口感很好而且营养丰富。早上我总是匆匆忙忙出门，有了limoshake可以让我不用只能吃不健康的街边食物了，我觉得它很满足我的需求。</p>
+            </div>
+            <div class="team-leader-box">
+                <div class="team-leader  wow fadeInDown delay-06s">
+                    <div class="team-leader-shadow"><a href="#"></a></div>
+                    <img src="img/team-leader-pic2.jpg" alt="">
+                    <ul>
+                        <li><a href="#" class="fa-twitter"></a></li>
+                        <li><a href="#" class="fa-facebook"></a></li>
+                        <li><a href="#" class="fa-pinterest"></a></li>
+                        <li><a href="#" class="fa-google-plus"></a></li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
+                <span class="wow fadeInDown delay-06s">创业公司CTO</span>
+                <p class="wow fadeInDown delay-06s">limoshake是非常方便和健康的食物，我以前忙的时候会吃些不健康的食物填饱肚子，现在不用再担心这一点了。在家，在办公室，出差在外我都会随身携带limoshake</p>
+            </div>
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-09s">
+                    <div class="team-leader-shadow"><a href="#"></a></div>
+                    <img src="img/team-leader-pic3.jpg" alt="">
+                    <ul>
+                        <li><a href="#" class="fa-twitter"></a></li>
+                        <li><a href="#" class="fa-facebook"></a></li>
+                        <li><a href="#" class="fa-pinterest"></a></li>
+                        <li><a href="#" class="fa-google-plus"></a></li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-09s">Skyler white</h3>
+                <span class="wow fadeInDown delay-09s">健身网红</span>
+                <p class="wow fadeInDown delay-09s">我在健身之前和健身之后都会吃。我一般在锻炼前会吃半瓶（大概250kcal），锻炼之后的半小时会把剩下的半瓶喝完。之前我去健身的时候，除了需要带蛋白粉，还需要带香蕉和一些其他的食物来补充能量，limoshake让我能够更加方便地补充所有的营养，很酷</p>
+            </div>
+        </div>
+    </div>
+</section><!--main-section team-end-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
+        <span class="copyright">&copy; LIMO Lab. All Rights Reserved</span>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/custom.min.js"></script>
+</body>
 </html>

@@ -1,67 +1,78 @@
-$(document).ready(function() {
-    $(window).load(function() {
-      $('.spinner').hide();
-      $('#home .row').show();
-    });
+$(document).ready(function(e) {
+    // Preloader
+    $(window).on('load', function() {
+      $('#preloader').delay(100).fadeOut('slow',function(){$(this).remove();});
 
-    $(window).scroll(function() {
-        "use strict";
-        var scroll = $(window).scrollTop();
-        if (scroll > 60) {
-            $(".header-transparent").addClass("sticky");
-        } else {
-            $(".header-transparent").removeClass("sticky");
+      $('.main-nav li a, .servicelink').bind('click',function(event){
+        var $anchor = $(this);
+
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top - 102
+        }, 1500,'easeInOutExpo');
+        /*
+        if you don't want to use the easing effects:
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+        */
+        if ($(window).width() < 768 ) {
+          $('.main-nav').hide();
+        }
+        event.preventDefault();
+      });
+
+      var $container = $('.portfolioContainer'),
+          $body = $('body'),
+          colW = 375,
+          columns = null;
+
+
+      $container.isotope({
+        // disable window resizing
+        resizable: true,
+        masonry: {
+          columnWidth: colW
+        }
+      });
+
+      $(window).smartresize(function(){
+        // check if columns has changed
+        var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+        if ( currentColumns !== columns ) {
+          // set new column count
+          columns = currentColumns;
+          // apply width to container manually, then trigger relayout
+          $container.width( columns * colW )
+            .isotope('reLayout');
         }
 
-        $(".banner-inner, .newsletter-home-text").css("opacity", 1 - scroll / 350);
-    });
+      }).smartresize(); // trigger resize to set container width
+      $('.portfolioFilter a').click(function(){
+            $('.portfolioFilter .current').removeClass('current');
+            $(this).addClass('current');
 
-    //parallax
-    // if (!Modernizr.touch) {
-    //   $('.home-newsletter').parallax("50%", 0.5);
-    //      $('.home-contact').parallax("50%", 0.5);
-    // }
-    //backstretch background slideshow using for banner intro
-    // $('.banner-slider').backstretch([
-    //   "./images/bg.jpg"
-    // ], {
-    //   fade: 750,
-    //   duration: 3000
-    // });
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
 
-    //smooth scroll
-    $(function() {
-        $('.scroll-to a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
+                filter: selector,
+             });
+             return false;
         });
     });
-    //Auto Close Responsive Navbar on Click
-    function close_toggle() {
-        if ($(window).width() <= 768) {
-            $('.navbar-collapse a').on('click', function() {
-                $('.navbar-collapse').collapse('hide');
-            });
-        } else {
-            $('.navbar .navbar-default a').off('click');
-        }
-    }
-    close_toggle();
-    $(window).resize(close_toggle);
 
-    //wow animations
-    var wow = new WOW({
-        boxClass: 'wow', // animated element css class (default is wow)
-        animateClass: 'animated', // animation css class (default is animated)
-        mobile: false, // trigger animations on mobile devices (true is default)
+    $('#test').scrollToFixed();
+    $('.res-nav_click').click(function(){
+        $('.main-nav').slideToggle();
+        return false
+
     });
+
+    var wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset: 100
+      }
+    );
     wow.init();
+
 });

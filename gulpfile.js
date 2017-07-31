@@ -6,10 +6,10 @@ var uglify = require('gulp-uglify');
 
 // Minify compiled CSS
 gulp.task('minify-css', function() {
-    return gulp.src('styles/style.css')
+    return gulp.src('css/style.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('styles'))
+        .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -40,7 +40,7 @@ gulp.task('browserSync', function() {
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync', 'minify-css', 'minify-js'], function() {
-    gulp.watch('styles/*.css', ['minify-css']);
+    gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
