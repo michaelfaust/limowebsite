@@ -304,33 +304,20 @@ color: #fff;
 .featured-box.seo{
 	background:url(../img/seo.png) left top no-repeat;
 }
-.Learn-More{
-	display:inline-block;
-	padding:0 5px 0 0;
-	color:#7cc576;
-	font-size:16px;
-	text-transform:uppercase;
-	font-weight:400;
-	line-height:24px;
-	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
-	display: none;
-}
-.Learn-More i{
-	padding-right:15px;
-}
 
-.Learn-More:hover, .Learn-More:focus{
-	text-decoration:none;
-	color: #111;
+@media only screen and (max-width: 479px) {
+	.featured-work {
+		padding: 0;
+	}
+	.featured-work h1, .featured-box h3, .featured-box p {
+		text-align: center;
+	}
 }
-
 
 /* Portfolio
 ---------------------------------*/
 #Portfolio h3 {
-	line-height: 1;
+	line-height: 1.5;
 }
 .portfolioFilter {
 	padding-top: 40px;
@@ -743,6 +730,7 @@ border: 2px solid #fff;
 	padding: 0 0 0 180px;
 }
 
+
 .banner h2 {
 	text-align: left;
 	font-size: 40px;
@@ -751,6 +739,25 @@ border: 2px solid #fff;
 
 .banner p {
 	font-size: 16px;
+}
+
+@media only screen and (max-width: 479px) {
+	.banner {
+		padding: 0 0 40px 0;
+	}
+	.banner .col-lg-6 {
+		padding: 0 30px;
+	}
+	.banner h2 {
+		text-align: left;
+		font-size: 30px;
+		font-weight: 400;
+		padding: 0;
+	}
+
+	.banner p {
+		font-size: 14px;
+	}
 }
 
 .nrvdesign .col-lg-4 {
@@ -796,6 +803,21 @@ border: 2px solid #fff;
 	border-radius: 100px;
 }
 
+@media only screen and (max-width: 479px) {
+	.ingredient .col-sm-4 {
+		text-align: center;
+	}
+
+	.ingredient h3 {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.ingredient p {
+		text-align: center;
+	}
+}
+
 .buy {
 	background: #eeeeee;
 	height: 120px;
@@ -806,23 +828,20 @@ border: 2px solid #fff;
 	cursor: pointer;
   border-radius: 4px;
   color: #000;
-  border: 1px solid #000;
+  box-shadow: -4px 4px 0px 0px rgba(0,0,0,0.15);
   width: 150px;
   /* height: 50px; */
   background: #fff;
   line-height: 40px;
-  margin-top: 40px;
-  font-size: 20px;
+  margin-top: 35px;
+  font-size: 18px;
 }
 
 .buy .btn:hover {
-  border-radius: 4px;
-  color: #fff;
-  border: 1px solid #fff;
-  width: 150px;
-  /* height: 50px; */
-  background: #000;
-  line-height: 40px;
+	-webkit-transform: scale(1.06);
+	transform: scale(1.06);
+	-webkit-transition: 0.5s all;
+	transition: 0.5s all;
 }
 
 .quality .item {
@@ -854,7 +873,26 @@ border: 2px solid #fff;
 	        transform: translate(0, -50%);
 }
 
+@media only screen and (max-width: 479px) {
+	.quality .col-lg-4 {
+		text-align: center;
+	}
+
+	.quality p {
+		padding: 40px;
+		text-align: center;
+	}
+
+	.quality .item {
+		margin-top: 50px;
+	}
+}
+
 .refer {
 	background: #eeeeee;
 	padding: 0 200px 50px;
+}
+
+.refer ul li {
+	padding: 0 10px;
 }
