@@ -30,13 +30,6 @@
   clear: both;
 }
 
-.figure{ margin:0px;}
-
-figure img {
-  max-width: 100%;
-  border-radius: 20px;
-}
-
 img{ max-width:100%;}
 
 a, a:hover, a:active{ outline:0px !important}
@@ -62,11 +55,10 @@ body {
 h1{
   font-size:48px;
   color:#222222;
-  font-weight:lighter;
+  font-weight: 200;
   letter-spacing: -1px;
   margin:0 0 30px 0;
   text-align:center;
-  text-transform:uppercase;
 }
 h2{
   text-align:center;
@@ -77,11 +69,17 @@ h3{
   font-size: 18px;
   text-transform:uppercase;
   text-align: center;
+  font-weight: 500;
   line-height: 2.2;
 }
 p{
+  font-weight: 300;
   line-height:24px;
   margin:0;
+}
+
+#service h3, #Portfolio h3 {
+  font-weight: 300;
 }
 
 /* Header Styles
@@ -113,7 +111,7 @@ p{
 }
 .we-create li{
   display:inline-block;
-  font-size:14px;
+  font-size:24px;
   color: #bcbcbc;
   text-transform: uppercase;
   font-weight: 400;
@@ -317,17 +315,6 @@ color: #fff;
 
 /* Portfolio
 ---------------------------------*/
-#Portfolio {
-  padding-top: 50px;
-  background: #f7f7f7;
-}
-
-#Portfolio h3 {
-  line-height: 1.5;
-}
-.portfolioFilter {
-  padding-top: 40px;
-}
 .Portfolio-nav{
   padding:0;
   margin:0 0 45px 0;
@@ -346,6 +333,7 @@ color: #fff;
   color:#222222;
   border-radius:4px;
   text-transform:uppercase;
+  font-family: 'Montserrat', sans-serif;
   background:#f7f7f7;
   margin-bottom:5px;
   transition:all 0.3s ease-in-out;
@@ -364,14 +352,13 @@ color: #fff;
 }
 
 .Portfolio-box{
-  background: #fff;
   text-align:center;
   margin-bottom:30px;
-  /* height:350px; */
+  height:350px;
   width:350px;
   overflow:hidden;
   float:left;
-  padding:15px;
+  padding:0;
 }
 .Portfolio-box img{
   transition:all 0.3s ease-in-out;
@@ -380,10 +367,7 @@ color: #fff;
 }
 
 .Portfolio-box img:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  opacity: 0.6;
 }
 
 .Portfolio-nav li a.current{
@@ -393,6 +377,21 @@ color: #fff;
 }
 img {
    max-width:100%;
+}
+
+/* no transition on .isotope container */
+
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.6s;
+     -moz-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
 }
 
 /* Clients
@@ -707,21 +706,21 @@ border: 2px solid #fff;
 
 /* NRV.html */
 .banner {
-  background: url(//cdn.shopify.com/s/files/1/1096/7494/t/19/assets/ample-v-white_1080x@2x.jpg?8751395636366969850) no-repeat center center;
+  background: url(../img/nutritionbanner.jpg) no-repeat center center;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
   background-size: 100% auto;
-  padding: 60px 0;
+  height: 300px;
 }
 
-.banner .col-lg-6 {
-  padding: 0 0 0 180px;
+.homebanner {
+  background: url(../img/homebanner.jpg) no-repeat center center;
 }
 
 .profile h2 {
   text-align: left;
-  padding-bottom: 0;
+  padding-bottom: 20px;
 }
 
 .profile {
@@ -763,7 +762,7 @@ border: 2px solid #fff;
 }
 
 .nrvdesign .nrvpanel {
-  height: 400px;
+  height: 350px;
   padding: 30px 40px;
   background-color: #fff;
   border-radius: 2px;
@@ -794,6 +793,10 @@ border: 2px solid #fff;
 
 .ingredient p {
   font-weight: lighter;
+}
+
+.ingredient .item .col-sm-4 {
+  text-align: center;
 }
 
 .ingredient .item img {
@@ -893,4 +896,14 @@ border: 2px solid #fff;
 
 .refer ul li {
   padding: 0 10px;
+}
+
+.blocktitle {
+  padding-right: 500px;
+}
+
+@media only screen and (max-width: 479px) {
+  .blocktitle {
+    padding-right: 80px;
+  }
 }

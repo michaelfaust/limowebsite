@@ -48,19 +48,19 @@ $(document).ready(function(e) {
 
       }).smartresize(); // trigger resize to set container width
       $('.portfolioFilter a').click(function(){
-            $('.portfolioFilter .current').removeClass('current');
-            $(this).addClass('current');
+          $('.portfolioFilter .current').removeClass('current');
+          $(this).addClass('current');
 
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
+          var selector = $(this).attr('data-filter');
+          $container.isotope({
 
-                filter: selector,
-             });
-             return false;
-        });
+              filter: selector,
+           });
+           return false;
+      });
     });
 
-    $('#test').scrollToFixed();
+    $('#about').scrollToFixed();
     $('.res-nav_click').click(function(){
         $('.main-nav').slideToggle();
         return false
