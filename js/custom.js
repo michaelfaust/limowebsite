@@ -7,7 +7,7 @@ $(document).ready(function(e) {
         var $anchor = $(this);
 
         $('html, body').stop().animate({
-          scrollTop: $($anchor.attr('href')).offset().top - 102
+          scrollTop: $($anchor.attr('href')).offset().top - 93
         }, 1500,'easeInOutExpo');
         /*
         if you don't want to use the easing effects:
@@ -65,6 +65,10 @@ $(document).ready(function(e) {
         $('.main-nav').slideToggle();
         return false
 
+    });
+
+    $('#nrvbanner').click(function() {
+      location.href = "http://www.limoshake.com/website/nrv.html";
     });
 
     var wow = new WOW(

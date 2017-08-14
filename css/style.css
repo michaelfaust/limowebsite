@@ -46,7 +46,7 @@ a, a:hover, a:active{ outline:0px !important}
 ---------------------------------*/
 body {
   background:#fff;
-  font-family: "Lato","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 苹方, simhei, 微软雅黑, Helvetica, Verdana, Arial, sans-serif;
   font-size:14px;
   font-weight:normal;
   color:#333;
@@ -86,9 +86,9 @@ p{
 ---------------------------------*/
 
 .header{
-  text-align:center;
-  background:url(../img/pw_maze_black_2X.png) left top repeat;
-  padding:280px 0;
+  text-align: center;
+  background: #1c1c1c;
+  padding: 280px 0;
 }
 .logo{
   width:130px;
@@ -133,7 +133,7 @@ color: #fff;
 
 .link{
   padding:15px 35px;
-  background:#7cc576;
+  background:#2da7e0;
   color:#fff !important;
   font-size:16px;
   font-weight:400;
@@ -148,12 +148,12 @@ color: #fff;
 }
 .link:hover {
   text-decoration:none;
-  color:#7cc576 !important;
+  color:#2da7e0 !important;
   background:#fff;
 }
 
 .link:active, .link:focus {
-  background: #7cc576;
+  background: #2da7e0;
   text-decoration:none;
   color:#fff !important;
 }
@@ -248,6 +248,10 @@ color: #fff;
   background:#f7f7f7;
 }
 
+.alabaster img {
+  border-radius: 5px;
+}
+
 .main-section.labdiy{
   background:#f7f7f7;
 }
@@ -271,7 +275,7 @@ color: #fff;
   text-align: left;
 }
 .featured-box p{
-  line-height:22px;
+  line-height: 26px;
   text-align: left;
 }
 .featured-work p.padding-b{
@@ -341,7 +345,7 @@ color: #fff;
   -webkit-transition:all 0.3s ease-in-out;
 }
 .Portfolio-nav li a:hover{
-  background:#7cc576;
+  background:#2da7e0;
   color:#fff;
   text-decoration:none;
 }
@@ -354,24 +358,29 @@ color: #fff;
 .Portfolio-box{
   text-align:center;
   margin-bottom:30px;
-  height:350px;
-  width:350px;
+  height:310px;
+  width:310px;
   overflow:hidden;
   float:left;
   padding:0;
 }
 .Portfolio-box img{
+  border-radius: 10px;
   transition:all 0.3s ease-in-out;
   -moz-transition:all 0.3s ease-in-out;
   -webkit-transition:all 0.3s ease-in-out;
 }
 
 .Portfolio-box img:hover {
-  opacity: 0.6;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  border-radius: 10px;
 }
 
 .Portfolio-nav li a.current{
-  background:#7cc576;
+  background:#2da7e0;
   color:#fff;
   text-decoration:none;
 }
@@ -397,17 +406,18 @@ img {
 /* Clients
 ---------------------------------*/
 .client-part{
-  background:url(../img/section-bg1.jpg) center center no-repeat;
+  background:url(../img/banner3.jpg) center center no-repeat;
   background-size:cover;
   padding:55px 0;
   text-align:center;
 }
 .client-part-haead{
   color:#fdfdfd;
-  font-size:28px;
+  font-size:16px;
   line-height:41px;
+  padding: 0 200px;
   margin:30px 0 10px;
-  font-family: "Lato","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 苹方, simhei, 微软雅黑, Helvetica, Verdana, Arial, sans-serif;
   font-style: italic;
 }
 .client{
@@ -426,6 +436,7 @@ img {
 .client li a img{
   margin-bottom:15px;
   border-radius:50%;
+  width: 100px;
 }
 .client li a:hover{
   text-decoration:none;
@@ -441,13 +452,13 @@ img {
   width:68px;
   height:68px;
   margin:0 auto;
-  border:2px solid #7cc576;
+  border:2px solid #2da7e0;
   border-radius:50%;
   display:block;
   line-height:68px;
   text-align:center;
   font-size:27px;
-  color:#7cc576;
+  color:#2da7e0;
   cursor: pointer;
   transition:all 0.3s ease-in-out;
   -moz-transition:all 0.3s ease-in-out;
@@ -460,7 +471,7 @@ border: 2px solid #fff;
 }
 
 .c-logo-part{
-  background:#7cc576;
+  background:#2da7e0;
   padding:25px 0;
     filter: alpha(opacity=60);
 }
@@ -607,7 +618,7 @@ border: 2px solid #fff;
 ---------------------------------*/
 
 .footer{
-  background:url(../img/pw_maze_black_2X.png) left top repeat;
+  background: #1c1c1c;
   padding:35px 0 35px;
 }
 .footer-logo{
@@ -621,7 +632,7 @@ border: 2px solid #fff;
   text-align:center;
 }
 .copyright a, .credits a{
-  color:#7cc576;
+  color:#2da7e0;
   font-weight:600;
   text-decoration: none;
   transition:all 0.3s ease-in-out;
@@ -650,7 +661,7 @@ border: 2px solid #fff;
 }
 
 .res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
-  color: #7cc576 !important;
+  color: #2da7e0 !important;
 }
 
 .portfolioContainer{
@@ -705,17 +716,22 @@ border: 2px solid #fff;
 }
 
 /* NRV.html */
-.banner {
-  background: url(../img/nutritionbanner.jpg) no-repeat center center;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
-  height: 300px;
+.nrvbanner {
+  background: url(../img/cutbanner.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* height: 300px; */
 }
 
 .homebanner {
-  background: url(../img/homebanner.jpg) no-repeat center center;
+  background: url(../img/homebanner.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 450px;
 }
 
 .profile h2 {
@@ -755,6 +771,10 @@ border: 2px solid #fff;
   .banner p {
     font-size: 14px;
   }
+
+  .homebanner {
+    display: none;
+  }
 }
 
 .nrvdesign .col-lg-4 {
@@ -766,6 +786,11 @@ border: 2px solid #fff;
   padding: 30px 40px;
   background-color: #fff;
   border-radius: 2px;
+}
+
+.nrvdesign .nrvpanelhover {
+  -webkit-box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
+          box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
 }
 
 .nrvdesign .nrvpanel:hover {
@@ -817,6 +842,10 @@ border: 2px solid #fff;
   .ingredient p {
     text-align: center;
   }
+
+  .nrvdesign .nrvpanel {
+    height: 230px;
+  }
 }
 
 .buy {
@@ -851,8 +880,8 @@ border: 2px solid #fff;
 }
 
 .quality .item img {
-  height: 100px;
-  border-radius: 100px;
+  width: 150px;
+  /* border-radius: 100px; */
 }
 
 .quality .col-lg-4 {
@@ -867,7 +896,7 @@ border: 2px solid #fff;
 
 .quality p {
   position: absolute;
-  padding-right: 100px;
+  padding-right: 200px;
   left: 0;
   top: 50%;
   -webkit-transform: translate(0, -50%);
@@ -877,6 +906,7 @@ border: 2px solid #fff;
 @media only screen and (max-width: 479px) {
   .quality .col-lg-4 {
     text-align: center;
+    padding-right: 15px;
   }
 
   .quality p {
@@ -885,7 +915,7 @@ border: 2px solid #fff;
   }
 
   .quality .item {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 }
 
@@ -904,6 +934,120 @@ border: 2px solid #fff;
 
 @media only screen and (max-width: 479px) {
   .blocktitle {
-    padding-right: 80px;
+    padding: 0 50px;
   }
+
+  .profile {
+    padding: 0 50px;
+  }
+
+  .profile h2 {
+    text-align: center;
+  }
+
+  .ingredient .col-lg-6 {
+    padding: 0;
+  }
+}
+
+.footer {
+  padding: 50px 0 110px 0;
+}
+
+.footer h3 {
+  text-align: left;
+  font-size: 18px;
+  color: #eef2fa;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.footer p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #737578;
+  font-weight: 500;
+}
+
+.footer a {
+  color: #737578;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer i {
+  margin-right: 10px;
+}
+
+.footer .col-lg-4 {
+  padding: 0 50px;
+}
+
+.foot_bot {
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+}
+
+.foot_bot p {
+  line-height: 50px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.foot_bot img {
+  margin-right: 5px;
+}
+
+.weixin, .weibo {
+  cursor: pointer;
+  position: relative;
+}
+
+.weixin em {
+    background: url(../img/weixin.png) no-repeat center;
+}
+
+.weixin:hover em {
+    background: url(../img/weixinhover.png) no-repeat center;
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+    background-size: 100% 100%;
+}
+
+.weibo em {
+    background: url(../img/weibo.png) no-repeat center;
+}
+
+.weibo:hover em {
+    background: url(../img/weibohover.png) no-repeat center;
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+    background-size: 100% 100%;
+}
+
+.weixin em, .weibo em {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 15px;
+  background-size: 100% 100%;
+}
+
+.weixin .qrcode, .weibo .qrcode {
+  display: none;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -25%;
+}
+
+.weixin:hover .qrcode, .weibo:hover .qrcode {
+  display: block;
 }
