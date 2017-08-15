@@ -1,4 +1,13 @@
 $(document).ready(function(e) {
+    var mySwiper = new Swiper ('.swiper-container', {
+      centeredSlides: true,
+      autoplay: 3000,
+      spaceBetween: 30,
+      loop: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+    });
+
     // Preloader
     $(window).on('load', function() {
       $('#preloader').delay(100).fadeOut('slow',function(){$(this).remove();});
@@ -78,5 +87,4 @@ $(document).ready(function(e) {
       }
     );
     wow.init();
-
 });

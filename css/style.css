@@ -133,7 +133,7 @@ color: #fff;
 
 .link{
   padding:15px 35px;
-  background:#2da7e0;
+  background:#7cc576;
   color:#fff !important;
   font-size:16px;
   font-weight:400;
@@ -148,12 +148,12 @@ color: #fff;
 }
 .link:hover {
   text-decoration:none;
-  color:#2da7e0 !important;
+  color:#7cc576 !important;
   background:#fff;
 }
 
 .link:active, .link:focus {
-  background: #2da7e0;
+  background: #7cc576;
   text-decoration:none;
   color:#fff !important;
 }
@@ -260,7 +260,7 @@ color: #fff;
 ---------------------------------*/
 .featured-work{
   font-size:14px;
-  padding: 80px 0 0 80px;
+  padding: 60px 0 0 80px;
 }
 .featured-work h1{
   text-align: left;
@@ -311,6 +311,9 @@ color: #fff;
   .featured-work h1, .featured-box h3, .featured-box p {
     text-align: center;
   }
+  .featured-box-col2 {
+    padding: 0 30px;
+  }
 }
 
 .labdiy .featured-work {
@@ -345,7 +348,7 @@ color: #fff;
   -webkit-transition:all 0.3s ease-in-out;
 }
 .Portfolio-nav li a:hover{
-  background:#2da7e0;
+  background:#7cc576;
   color:#fff;
   text-decoration:none;
 }
@@ -380,7 +383,7 @@ color: #fff;
 }
 
 .Portfolio-nav li a.current{
-  background:#2da7e0;
+  background:#7cc576;
   color:#fff;
   text-decoration:none;
 }
@@ -412,13 +415,14 @@ img {
   text-align:center;
 }
 .client-part-haead{
+  text-align: left;
   color:#fdfdfd;
   font-size:16px;
   line-height:41px;
-  padding: 0 200px;
+  padding: 0 290px;
   margin:30px 0 10px;
   font-family: 苹方, simhei, 微软雅黑, Helvetica, Verdana, Arial, sans-serif;
-  font-style: italic;
+  /* font-style: italic; */
 }
 .client{
   padding:0;
@@ -452,13 +456,13 @@ img {
   width:68px;
   height:68px;
   margin:0 auto;
-  border:2px solid #2da7e0;
+  border:2px solid #7cc576;
   border-radius:50%;
   display:block;
   line-height:68px;
   text-align:center;
   font-size:27px;
-  color:#2da7e0;
+  color:#7cc576;
   cursor: pointer;
   transition:all 0.3s ease-in-out;
   -moz-transition:all 0.3s ease-in-out;
@@ -471,7 +475,7 @@ border: 2px solid #fff;
 }
 
 .c-logo-part{
-  background:#2da7e0;
+  background:#7cc576;
   padding:25px 0;
     filter: alpha(opacity=60);
 }
@@ -632,7 +636,7 @@ border: 2px solid #fff;
   text-align:center;
 }
 .copyright a, .credits a{
-  color:#2da7e0;
+  color:#7cc576;
   font-weight:600;
   text-decoration: none;
   transition:all 0.3s ease-in-out;
@@ -661,7 +665,7 @@ border: 2px solid #fff;
 }
 
 .res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
-  color: #2da7e0 !important;
+  color: #7cc576 !important;
 }
 
 .portfolioContainer{
@@ -827,6 +831,7 @@ border: 2px solid #fff;
 .ingredient .item img {
   height: 100px;
   border-radius: 100px;
+  border: 1px solid #7cc576;
 }
 
 @media only screen and (max-width: 479px) {
@@ -856,23 +861,47 @@ border: 2px solid #fff;
 
 .buy .btn {
   cursor: pointer;
-  border-radius: 4px;
-  color: #000;
-  box-shadow: -4px 4px 0px 0px rgba(0,0,0,0.15);
-  width: 120px;
-  /* height: 50px; */
-  background: #fff;
-  line-height: 30px;
-  margin-top: 35px;
-  font-size: 18px;
+  margin: 40px auto 0;
+  border: 1px solid #333;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 0;
 }
 
 .buy .btn:hover {
-  -webkit-transform: scale(1.06);
-  transform: scale(1.06);
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  color: #fff;
+  background-color: #333;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
+
+.buy .btn em {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border: 5px solid;
+    margin-left: 15px;
+    border-color: transparent transparent transparent #333;
+}
+
+.buy .btn:hover em {
+  border-color: transparent transparent transparent #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.buy img {
+  display: block;
+  width: 140px;
+  margin: -1px auto 0;
+}
+
 
 .quality .item {
   height: 160px;
@@ -998,10 +1027,11 @@ border: 2px solid #fff;
 }
 
 .foot_bot img {
-  margin-right: 5px;
+  margin-bottom: 2px;
+  width: 14px;
 }
 
-.weixin, .weibo {
+.weixin, .youzan, .weibo {
   cursor: pointer;
   position: relative;
 }
@@ -1012,11 +1042,15 @@ border: 2px solid #fff;
 
 .weixin:hover em {
     background: url(../img/weixinhover.png) no-repeat center;
-    display: block;
-    width: 55px;
-    height: 55px;
-    margin-bottom: 15px;
-    background-size: 100% 100%;
+}
+
+.youzan em {
+    background: url(../img/youzan.png) no-repeat center;
+}
+
+
+.youzan:hover em {
+    background: url(../img/youzanhover.png) no-repeat center;
 }
 
 .weibo em {
@@ -1025,14 +1059,9 @@ border: 2px solid #fff;
 
 .weibo:hover em {
     background: url(../img/weibohover.png) no-repeat center;
-    display: block;
-    width: 55px;
-    height: 55px;
-    margin-bottom: 15px;
-    background-size: 100% 100%;
 }
 
-.weixin em, .weibo em {
+.weixin em, .weixin:hover em, .youzan em, .youzan:hover em, .weibo em, .weibo:hover em {
   display: block;
   width: 55px;
   height: 55px;
@@ -1040,14 +1069,32 @@ border: 2px solid #fff;
   background-size: 100% 100%;
 }
 
-.weixin .qrcode, .weibo .qrcode {
+.weixin .qrcode, .youzan .qrcode {
   display: none;
   width: 100px;
   height: 100px;
   position: absolute;
-  left: -25%;
+  left: -40%;
 }
 
-.weixin:hover .qrcode, .weibo:hover .qrcode {
+.weixin:hover .qrcode, .youzan:hover .qrcode {
   display: block;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+@media only screen and (max-width: 479px) {
+  .weixin .qrcode, .youzan .qrcode {
+    display: block;
+    left: 80px;
+    top: -20px;
+  }
+
+  .youzan .qrcode {
+    top: 50px;
+  }
+
+  .foot_bot p {
+    line-height: 28px;
+  }
 }
