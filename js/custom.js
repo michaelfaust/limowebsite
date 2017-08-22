@@ -1,11 +1,11 @@
 $(document).ready(function(e) {
     var mySwiper = new Swiper ('.swiper-container', {
       centeredSlides: true,
-      autoplay: 3000,
-      spaceBetween: 30,
+      autoplay: 5000,
+      speed: 1000,
       loop: true,
       nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
+      prevButton: '.swiper-button-prev'
     });
 
     // Preloader
@@ -78,6 +78,12 @@ $(document).ready(function(e) {
 
     $('#nrvbanner').click(function() {
       location.href = "http://www.limoshake.com/website/nrv.html";
+    });
+
+    $('#alabasterimg').click(function(event) {
+      /* Act on the event */
+      // $(this).toggleClass('min');
+      $(this).toggleClass('max');
     });
 
     var wow = new WOW(
