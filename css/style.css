@@ -69,7 +69,7 @@ h3{
   font-size: 18px;
   text-align: center;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 p{
   line-height:24px;
@@ -83,13 +83,12 @@ p{
 #service b {
   font-weight: 400;
 }
-
 /* Header Styles
 ---------------------------------*/
 
 .header{
   text-align: center;
-  background: #1c1c1c;
+  background-image: -webkit-linear-gradient(-90deg,#1c1e28,#1c1e28 65%,#313443);
   padding: 280px 0;
 }
 .logo{
@@ -97,8 +96,8 @@ p{
   margin:0 auto 35px;
 }
 .header h1{
-  font-size:50px;
-  font-weight:400;
+  font-size:46px;
+  font-weight:600;
   letter-spacing: -1px;
   margin:0 0 22px 0 ;
   color:#fff;
@@ -106,22 +105,17 @@ p{
 
 .we-create{
   padding:0;
-  margin:35px 0 55px;
+  margin:35px 0 35px;
 }
 .wp-pic{
   margin-bottom:20px;
 }
-.we-create li{
+.we-create p {
   display:inline-block;
-  font-size:24px;
-  color: #bcbcbc;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin:0 5px 0 0;
-  padding:0 0 0 15px;
-}
-.we-create li:first-child{
-  background:none;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 200;
+  color: #bbbcbf;
 }
 
 .start-button {
@@ -129,18 +123,18 @@ p{
 }
 
 .start-button li a{
-color: #fff;
+  color: #fff;
 }
 
 
 .link{
-  padding:15px 35px;
-  background:#7cc576;
-  color:#fff !important;
+  padding:8px 22px;
+  background: linear-gradient(270deg,#5960e5,#59b2d2);
+  color:#e4e7ed;
   font-size:16px;
   font-weight:400;
   display:inline-block;
-  border-radius:3px;
+  border-radius:20px;
   text-transform:uppercase;
   line-height:25px;
   margin-bottom:20px;
@@ -150,12 +144,10 @@ color: #fff;
 }
 .link:hover {
   text-decoration:none;
-  color:#7cc576 !important;
-  background:#fff;
+  color:#fff !important;
 }
 
 .link:active, .link:focus {
-  background: #7cc576;
   text-decoration:none;
   color:#fff !important;
 }
@@ -307,6 +299,9 @@ color: #fff;
   }
   .featured-work h1, .featured-box h3, .featured-box p {
     text-align: center;
+  }
+  .featured-work h1 {
+    font-size: 32px;
   }
   .featured-box-col2 {
     padding: 0 30px;
@@ -751,7 +746,7 @@ border: 2px solid #fff;
 
 /* NRV.html */
 .nrvbanner {
-  background: url(../img/cutbanner.jpg) no-repeat center center fixed;
+  background: url(../img/cutbanner.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -761,7 +756,7 @@ border: 2px solid #fff;
 
 .homebanner {
   position: relative;
-  background: url(../img/homebanner.jpg) no-repeat center center fixed;
+  background: url(../img/homebanner.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -772,14 +767,14 @@ border: 2px solid #fff;
 .homebanner .homebannerTitle {
   position: absolute;
   width: 300px;
-  top: 40%;
-  right: 25%;
+  top: 34%;
+  right: 20%;
 }
 
 .homebanner .homebannerTitle h3 {
-  font-size: 30px;
-  font-weight: 400;
-  color: #333;
+  font-size: 32px;
+  font-weight: 200;
+  color: #fff;
 }
 
 .profile h2 {
@@ -836,11 +831,6 @@ border: 2px solid #fff;
   border-radius: 2px;
 }
 
-.nrvdesign .nrvpanelhover {
-  -webkit-box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
-          box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
-}
-
 .nrvdesign .nrvpanel:hover {
   -webkit-box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
           box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
@@ -879,8 +869,8 @@ border: 2px solid #fff;
 }
 
 .ingredient .item:hover img {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
@@ -900,7 +890,18 @@ border: 2px solid #fff;
   }
 
   .nrvdesign .nrvpanel {
-    height: 230px;
+    height: 250px;
+  }
+
+  .nrvdesign .col-lg-4 {
+    padding: 10px 50px;
+  }
+
+  .main-section h1 {
+    font-size: 32px;
+  }
+  .main-section .container h1 img {
+    width: 30px;
   }
 }
 
@@ -1040,6 +1041,7 @@ border: 2px solid #fff;
 }
 
 .footer {
+  margin-top: 20px;
   padding: 10px 0 50px 0;
 }
 

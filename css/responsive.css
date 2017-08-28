@@ -102,4 +102,19 @@
 	.Portfolio-box img { max-width:100%;}
 	.portfolioContainer{ width:280px !important; margin:0 auto !important }
 
+	.featured-work {
+		padding: 0 50px;
+	}
+}
+
+@media only screen and (max-width: 374px) {
+	.featured-work {
+		padding: 0 12px;
+	}
+}
+
+@media only screen and (max-width: 410px) {
+	.featured-work {
+		padding: 0 30px;
+	}
 }
