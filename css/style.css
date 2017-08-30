@@ -263,12 +263,23 @@ p{
 .service-list-col2{
   overflow:hidden;
 }
-.main-section.alabaster{
+.main-section.alabaster {
   background:#f7f7f7;
 }
 
+.alabaster h3 {
+  width: 660px;
+  margin: 0 auto;
+}
+
 .alabaster img {
+  margin-top: 20px;
+  width: 65%;
   border-radius: 5px;
+}
+
+.alabaster .row {
+  text-align: center;
 }
 
 .alabaster .max{width:200%}
@@ -315,6 +326,13 @@ p{
   }
   .featured-box-col2 {
     padding: 0 30px;
+  }
+  .alabaster h3 {
+    width: 100%;
+  }
+
+  .alabaster img {
+    width: 100%;
   }
 }
 
@@ -767,14 +785,14 @@ border: 2px solid #fff;
   position: relative;
   background: url(../img/homebanner.jpg) no-repeat center center;
   background-size: cover;
-  height: 450px;
+  height: 520px;
 }
 
 .homebanner .homebannerTitle {
   position: absolute;
   width: 300px;
   top: 34%;
-  right: 15%;
+  right: 18%;
 }
 
 .homebanner .homebannerTitle h3 {
@@ -904,7 +922,7 @@ border: 2px solid #fff;
   }
 
   .main-section h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
   .main-section .container h1 img {
     width: 30px;
