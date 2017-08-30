@@ -82,6 +82,11 @@ p{
 #service b {
   font-weight: 400;
 }
+
+#service img {
+  width: 60%;
+}
+
 /* Header Styles
 ---------------------------------*/
 
@@ -298,7 +303,7 @@ p{
   text-align: left;
 }
 .featured-box{
-  padding:0 0 0 0;
+  padding:40px 0 0 100px;
   margin-bottom:25px;
   font-size:14px;
 }
@@ -312,6 +317,14 @@ p{
 }
 .featured-work p.padding-b{
   padding-bottom:35px;
+}
+
+.freetime .featured-work {
+  padding: 0;
+}
+
+.freetime .timeimg {
+  padding: 20px 0 0 80px;
 }
 
 @media only screen and (max-width: 479px) {
