@@ -46,7 +46,7 @@ $(document).ready(function(e) {
 
       $(window).smartresize(function(){
         // check if columns has changed
-        var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+        var currentColumns = Math.floor( ( $body.width() ) / colW );
         if ( currentColumns !== columns ) {
           // set new column count
           columns = currentColumns;
@@ -90,7 +90,7 @@ $(document).ready(function(e) {
       {
         animateClass: 'animated',
         offset: 100,
-        mobile: false
+        mobile: false,
       }
     );
     wow.init();
