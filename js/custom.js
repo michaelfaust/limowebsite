@@ -1,8 +1,8 @@
 $(document).ready(function(e) {
     var mySwiper = new Swiper ('.swiper-container', {
       centeredSlides: true,
-      autoplay: 5000,
-      speed: 1000,
+      autoplay: 4000,
+      speed: 600,
       loop: true,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev'
@@ -89,7 +89,8 @@ $(document).ready(function(e) {
     var wow = new WOW(
       {
         animateClass: 'animated',
-        offset: 100
+        offset: 100,
+        mobile: false
       }
     );
     wow.init();

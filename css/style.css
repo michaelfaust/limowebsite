@@ -84,7 +84,7 @@ p{
 }
 
 #service img {
-  width: 60%;
+  width: 65%;
 }
 
 /* #service img:hover {
@@ -322,11 +322,11 @@ p{
   padding: 0;
 }
 
-.freetime .timeimg {
-  padding: 20px 0 0 80px;
-}
-
 @media only screen and (max-width: 479px) {
+  #service img {
+    width: 100%;
+  }
+
   .featured-work {
     padding: 0;
   }
@@ -467,17 +467,17 @@ img {
 }
 
 .client-part .pbg1{
-  background:#333;
+  background:rgb(28, 28, 28);
   background-size:cover;
 }
 
 .client-part .pbg2{
-  background:#333;
+  background:rgb(28, 28, 28);
   background-size:cover;
 }
 
 .client-part .pbg3{
-  background:#333;
+  background:rgb(28, 28, 28);
   background-size:cover;
 }
 
