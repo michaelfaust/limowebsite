@@ -1,12 +1,28 @@
 $(document).ready(function(e) {
-    var mySwiper = new Swiper ('.swiper-container', {
-      centeredSlides: true,
-      autoplay: 4000,
-      speed: 600,
-      loop: true,
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev'
+    // var mySwiper = new Swiper ('.swiper-container', {
+    //   centeredSlides: true,
+    //   autoplay: 4000,
+    //   speed: 600,
+    //   loop: true,
+    //   nextButton: '.swiper-button-next',
+    //   prevButton: '.swiper-button-prev'
+    // });
+
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        initialSlide:1,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : false
+        }
     });
+
 
     // Preloader
     $(window).on('load', function() {
