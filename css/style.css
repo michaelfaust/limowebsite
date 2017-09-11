@@ -72,9 +72,9 @@ body {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 35px;
     color: #2c2d44;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: -1px;
     margin: 0 0 30px 0;
     text-align: center;
@@ -99,7 +99,7 @@ p {
 
 #service h3,
 #Portfolio h3 {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #service b {
@@ -107,7 +107,7 @@ p {
 }
 
 #service img {
-    width: 65%;
+    width: 70%;
 }
 
 
@@ -169,8 +169,8 @@ p {
 
 .link {
     padding: 8px 22px;
-    background: -webkit-gradient(linear, right top, left top, from(#5960e5), to(#59b2d2));
-    background: linear-gradient(270deg, #5960e5, #59b2d2);
+    /* background: -webkit-gradient(linear, right top, left top, from(#5960e5), to(#59b2d2));
+    background: linear-gradient(270deg, #5960e5, #59b2d2); */
     color: #e4e7ed;
     font-size: 16px;
     font-weight: 400;
@@ -179,10 +179,34 @@ p {
     text-transform: uppercase;
     line-height: 25px;
     margin-bottom: 20px;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
+    border:1px solid #2b92d4;
+    /*规定动画变换速度：ease-in-out -->动画以低速开始和结束 */
+    -webkit-animation-timing-function:ease-in-out;
+
+    /*为 @keyframes 动画规定一个名称*/
+    -webkit-animation-name:submit;
+
+    /*完成一个动画所需时间*/
+    -webkit-animation-duration:1500ms;
+
+    /*规定动画播放次数：infinite为无限次*/
+    -webkit-animation-iteration-count:infinite;
+
+    /*规定动画播放方式：alternate为轮流反向播放*/
+    -webkit-animation-direction:alternate;
     cursor: pointer;
+}
+
+@-webkit-keyframes submit {
+    0% {
+        /* opacity:.4;     /*元素不透明级别*/ */
+        box-shadow:0 1px 2px rgba(255,255,255,0.1);
+    }
+    100% {
+        opacity:1;
+        border:1px solid rgba(59,235,235,2);
+        box-shadow:0 1px 30px rgba(59,255,255,2);
+    }
 }
 
 .link:hover {
@@ -273,12 +297,19 @@ p {
     margin-right: 10px;
 }
 
+.main-section .container h1:hover img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
 .main-section.alabaster {
     background: #fff;
 }
 
 .alabaster p {
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
     text-align: left;
 }
@@ -324,7 +355,7 @@ p {
 }
 
 .featured-box {
-    padding: 10px 80px 0 80px;
+    padding: 8px 80px 0 80px;
 }
 
 .featured-box h3 {
@@ -352,7 +383,8 @@ p {
 }
 
 .freetime figure img {
-    width: 90%;
+    width: 95%;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width: 479px) {
@@ -753,7 +785,7 @@ img {
 
 .homebanner {
     position: relative;
-    background: url(../img/homebanner.jpg) no-repeat center center;
+    background: url(http://oje3wjypj.bkt.clouddn.com/image/limohomebanner.jpg) no-repeat center center;
     background-size: cover;
     height: 520px;
 }

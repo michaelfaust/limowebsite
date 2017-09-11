@@ -1,17 +1,9 @@
 $(document).ready(function(e) {
-    // var mySwiper = new Swiper ('.swiper-container', {
-    //   centeredSlides: true,
-    //   autoplay: 4000,
-    //   speed: 600,
-    //   loop: true,
-    //   nextButton: '.swiper-button-next',
-    //   prevButton: '.swiper-button-prev'
-    // });
-
     var swiper = new Swiper('.swiper-container', {
         effect: 'coverflow',
         grabCursor: true,
-        initialSlide:1,
+        initialSlide: 1,
+        slideToClickedSlide: true,
         centeredSlides: true,
         slidesPerView: 'auto',
         coverflow: {
@@ -22,7 +14,6 @@ $(document).ready(function(e) {
             slideShadows : false
         }
     });
-
 
     // Preloader
     $(window).on('load', function() {
