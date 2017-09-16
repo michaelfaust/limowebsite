@@ -13,6 +13,7 @@
 }
 
 
+
 /* Clear Floated Elements
 ---------------------------------*/
 
@@ -58,6 +59,7 @@ a:active {
 }
 
 
+
 /* Primary Styles
 ---------------------------------*/
 
@@ -94,14 +96,11 @@ h3 {
 
 p {
     margin: 0;
-    color: #5a5e69;
+    color: #2c2d44;
 }
 
 #service h3,
-#Portfolio h3 {
-    font-weight: 400;
-}
-
+#Portfolio h3,
 #service b {
     font-weight: 400;
 }
@@ -109,6 +108,11 @@ p {
 #service img {
     width: 70%;
 }
+
+.main-section {
+    padding: 70px 30px 0;
+}
+
 
 
 /* #service img:hover {
@@ -179,33 +183,34 @@ p {
     text-transform: uppercase;
     line-height: 25px;
     margin-bottom: 20px;
-    border:1px solid #2b92d4;
+    border: 1px solid #2b92d4;
     /*规定动画变换速度：ease-in-out -->动画以低速开始和结束 */
-    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
 
     /*为 @keyframes 动画规定一个名称*/
-    -webkit-animation-name:submit;
+    -webkit-animation-name: submit;
 
     /*完成一个动画所需时间*/
-    -webkit-animation-duration:1500ms;
+    -webkit-animation-duration: 1500ms;
 
     /*规定动画播放次数：infinite为无限次*/
-    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count: infinite;
 
     /*规定动画播放方式：alternate为轮流反向播放*/
-    -webkit-animation-direction:alternate;
+    -webkit-animation-direction: alternate;
     cursor: pointer;
 }
 
 @-webkit-keyframes submit {
     0% {
-        /* opacity:.4;     /*元素不透明级别*/ */
-        box-shadow:0 1px 2px rgba(255,255,255,0.1);
+        /* opacity:.4;     /*元素不透明级别*/
+        */ box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
     }
     100% {
-        opacity:1;
-        border:1px solid rgba(59,235,235,2);
-        box-shadow:0 1px 30px rgba(59,255,255,2);
+        opacity: 1;
+        border: 1px solid rgba(59, 235, 235, 2);
+        -webkit-box-shadow: 0 1px 30px rgba(59, 255, 255, 2);
+        box-shadow: 0 1px 30px rgba(59, 255, 255, 2);
     }
 }
 
@@ -219,6 +224,7 @@ p {
     text-decoration: none;
     color: #fff !important;
 }
+
 
 
 /* Navigation
@@ -285,10 +291,6 @@ p {
     padding: 0 32px;
 }
 
-.main-section {
-    padding: 60px 0;
-}
-
 .main-section .container h1 img {
     width: 40px;
     color: #fff;
@@ -306,6 +308,10 @@ p {
 
 .main-section.alabaster {
     background: #fff;
+}
+
+.alabaster .container {
+    padding: 0 30px;
 }
 
 .alabaster p {
@@ -340,6 +346,7 @@ p {
 .main-section.labdiy {
     background: #f7f7f7;
 }
+
 
 
 /* Featured Work
@@ -396,6 +403,10 @@ p {
         width: 100%;
     }
 
+    #service figure {
+        margin-top: 30px;
+    }
+
     .freetime figure {
         text-align: center;
     }
@@ -430,6 +441,7 @@ p {
 .labdiy .featured-work {
     padding: 60px 50px;
 }
+
 
 
 /* Portfolio
@@ -525,6 +537,7 @@ img {
 }
 
 
+
 /* no transition on .isotope container */
 
 .isotope .isotope-item {
@@ -540,6 +553,7 @@ img {
     transition-property: transform, opacity;
     transition-property: transform, opacity, -webkit-transform;
 }
+
 
 
 /* Clients
@@ -646,10 +660,12 @@ img {
 }
 
 
+
 /* Footer
 ---------------------------------*/
 
 .footer {
+    margin-top: 60px;
     background: #1c1c1c;
     padding: 35px 0 35px;
 }
@@ -721,6 +737,7 @@ img {
 
 
 
+
 /* Animation Timers
 ---------------------------------*/
 
@@ -775,6 +792,7 @@ img {
 }
 
 
+
 /* NRV.html */
 
 .nrvbanner {
@@ -793,8 +811,12 @@ img {
 .homebanner .homebannerTitle {
     position: absolute;
     width: 300px;
-    top: 25%;
-    right: 18%;
+    top: 35%;
+    right: 16%;
+}
+
+.homebanner .homebannerTitle h1 {
+    text-align: right;
 }
 
 .homebanner .homebannerTitle p {
@@ -847,6 +869,9 @@ img {
         right: 10%;
         left: 10%;
     }
+    .homebanner .homebannerTitle h1 {
+        text-align: center;
+    }
 }
 
 .nrvdesign .col-lg-4 {
@@ -881,10 +906,6 @@ img {
     text-align: left;
     margin: 0 0 10px 0;
     line-height: 1;
-}
-
-.ingredient p {
-    font-weight: lighter;
 }
 
 .ingredient .item .col-sm-4 {
@@ -1192,6 +1213,7 @@ img {
 
     .youzan,
     .weibo,
+    .weixin:hover em,
     .weixin em {
         display: none;
     }
@@ -1264,7 +1286,14 @@ img {
 }
 
 #playload {
+    -webkit-animation: dash 2.5s reverse ease-in-out infinite;
     animation: dash 2.5s reverse ease-in-out infinite;
+}
+
+@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 2000;
+    }
 }
 
 @keyframes dash {

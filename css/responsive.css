@@ -52,9 +52,6 @@
     .featured-work p.padding-b {
         padding-bottom: 15px;
     }
-    .main-section {
-        padding: 70px 0;
-    }
     .c-logo-part ul li {
         margin: 0 1%;
         float: left;
@@ -83,13 +80,16 @@
         padding: 8px 15px;
     }
     /*.portfolioContainer{ width:750px; margin:0px auto !important; }
-	.Portfolio-box{ height:250px;}*/
+    .Portfolio-box{ height:250px;}*/
 }
 
 @media only screen and (max-width: 767px) {
     /****Mobile Landscape 480 Container 100% ****/
     body {
         font-size: 12px;
+    }
+    h1 {
+        font-size: 32px;
     }
     h2 {
         font-size: 26px;
@@ -102,7 +102,7 @@
         margin-bottom: 40px;
     }
     p {
-        line-height: 18px;
+        line-height: 20px;
     }
     .service-list {
         font-size: 12px;
@@ -117,9 +117,6 @@
     }
     .header {
         padding: 60px 0;
-    }
-    .main-section {
-        padding: 60px 30px;
     }
     .main-nav {
         display: none;
@@ -221,10 +218,10 @@
         display: block;
     }
     /*.isotope-item img{ width:300px; left:50%; margin-left:-100px;}
-	.isotope-item{ width:300px; margin:0px auto;}
-	.isotope{ width:400px; margin:0px auto;}
-	.Portfolio-box{}
-	.portfolioContainer{ width:350px; margin:0px auto !important; } */
+    .isotope-item{ width:300px; margin:0px auto;}
+    .isotope{ width:400px; margin:0px auto;}
+    .Portfolio-box{}
+    .portfolioContainer{ width:350px; margin:0px auto !important; } */
 }
 
 @media only screen and (max-width: 479px) {
@@ -259,6 +256,12 @@
 
     .featured-work {
         padding: 0 50px;
+    }
+
+    .alabaster .iconlist {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
     }
 }
 
