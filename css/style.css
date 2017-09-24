@@ -67,7 +67,7 @@ a:active {
 
 body {
     background: #fff;
-    font-family: -apple-system, BlinkMacSystemFont, Neue Haas Grotesk Text Pro, Arial Nova, Segoe UI, Helvetica Neue, \.PingFang SC, PingFang SC, Microsoft YaHei, Microsoft JhengHei, Source Han Sans SC, Noto Sans CJK SC, Source Han Sans CN, Noto Sans SC, Source Han Sans TC, Noto Sans CJK TC, Hiragino Sans GB, sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Neue Haas Grotesk Text Pro,Arial Nova,Segoe UI,Helvetica Neue,\.PingFang SC,PingFang SC,Microsoft YaHei,Microsoft JhengHei,Source Han Sans SC,Noto Sans CJK SC,Source Han Sans CN,Noto Sans SC,Source Han Sans TC,Noto Sans CJK TC,Hiragino Sans GB,sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 1.65;
@@ -76,7 +76,7 @@ body {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 45px;
     color: #2c2d44;
     font-weight: 400;
     letter-spacing: -1px;
@@ -91,13 +91,14 @@ h2 {
 
 h3 {
     color: #5D5D5D;
-    font-size: 16px;
+    font-size: 22px;
     text-align: center;
     line-height: 1.8;
 }
 
 p {
     margin: 0;
+    font-size: 16px;
     color: #2c2d44;
 }
 
@@ -113,7 +114,7 @@ p {
 }
 
 .main-section {
-    padding: 70px 30px 0;
+    padding: 90px 30px;
 }
 
 
@@ -246,7 +247,7 @@ p {
 
 .main-nav {
     text-align: center;
-    margin: 10px 0 0px;
+    margin: 7px 0 0px;
     padding: 0;
     list-style: none;
 }
@@ -258,7 +259,7 @@ p {
 }
 
 .main-nav img {
-    height: 50px;
+    height: 45px;
 }
 
 .main-nav li.active a,
@@ -272,7 +273,7 @@ p {
     text-transform: uppercase;
     text-decoration: none;
     line-height: 18px;
-    margin: 14px 32px;
+    margin: 7px 32px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -312,7 +313,9 @@ p {
 }
 
 .main-section.alabaster {
-    background: #fff;
+    background: url(../img/nrvbanner0.jpg) no-repeat center center;
+    background-size: cover;
+    height: 700px;
 }
 
 .alabaster .container {
@@ -322,7 +325,7 @@ p {
 .alabaster p {
     width: 60%;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
 }
 
 .alabaster .icon p {
@@ -398,16 +401,21 @@ p {
 .freetime figure img {
     width: 65%;
     border-radius: 5px;
-    margin-right: 40px;
+    margin-right: 80px;
 }
 
 .freetime .timeimg {
     padding-right: 50px;
     margin-top: 20px;
+    margin-left: -30px;
+}
+
+.freetime .timeimg img {
+    width: 90%;
 }
 
 .freetime .featured-box {
-    padding: 8px 120px 0 60px;
+    padding: 8px 180px 0 40px;
 }
 
 @media only screen and (max-width: 479px) {
@@ -434,6 +442,11 @@ p {
 
     .freetime .timeimg {
         padding: 0;
+        margin-left: 0;
+    }
+
+    .freetime .timeimg img {
+        width: 100%;
     }
 
     .featured-work {
@@ -828,18 +841,14 @@ img {
     position: relative;
     background: url(http://oje3wjypj.bkt.clouddn.com/image/limohomebanner.jpg) no-repeat center center;
     background-size: cover;
-    height: 520px;
+    height: 620px;
 }
 
 .homebanner .homebannerTitle {
     position: absolute;
     width: 300px;
     top: 35%;
-    right: 16%;
-}
-
-.homebanner .homebannerTitle h1 {
-    text-align: right;
+    right: 15%;
 }
 
 .homebanner .homebannerTitle p {
@@ -891,6 +900,7 @@ img {
         top: 25%;
         right: 10%;
         left: 10%;
+        padding: 0 30px;
     }
     .homebanner .homebannerTitle h1 {
         text-align: center;
@@ -906,15 +916,6 @@ img {
     padding: 30px 40px;
     background-color: #fff;
     border-radius: 2px;
-}
-
-.nrvdesign .nrvpanel:hover {
-    -webkit-box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
-    box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
-    -webkit-transform: scale(1.06);
-    transform: scale(1.06);
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
 }
 
 .ingredient .col-lg-6 {

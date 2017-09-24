@@ -16,6 +16,14 @@
     .main-nav {
         display: block !important;
     }
+    .nrvdesign .nrvpanel:hover {
+        -webkit-box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
+        box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
+        -webkit-transform: scale(1.06);
+        transform: scale(1.06);
+        -webkit-transition: 0.5s all;
+        transition: 0.5s all;
+    }
     /*.portfolioContainer{ width:800px; margin:0px auto !important; } */
 }
 
@@ -78,6 +86,14 @@
     }
     .main-nav li a {
         padding: 8px 15px;
+    }
+    .nrvdesign .nrvpanel:hover {
+        -webkit-box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
+        box-shadow: 0px 11px 30px 0px rgba(0, 0, 0, 0.65);
+        -webkit-transform: scale(1.06);
+        transform: scale(1.06);
+        -webkit-transition: 0.5s all;
+        transition: 0.5s all;
     }
     /*.portfolioContainer{ width:750px; margin:0px auto !important; }
     .Portfolio-box{ height:250px;}*/
@@ -262,6 +278,14 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
     }
 }
 
