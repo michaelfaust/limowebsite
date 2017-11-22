@@ -620,6 +620,10 @@ img {
     box-shadow: 0px 5px 5px 4px rgba(0, 0, 0, 0.3);
 }
 
+.client-part .swiper-pagination-bullet-active {
+    background: #333;
+}
+
 .client-part-head {
     text-align: left;
     font-size: 16px;
@@ -761,6 +765,7 @@ img {
 .res-nav_click i {
     position: absolute;
     right: 0;
+    font-style: normal;
 }
 
 

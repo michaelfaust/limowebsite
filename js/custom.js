@@ -1,6 +1,7 @@
 $(document).ready(function(e) {
     var swiper = new Swiper('.swiper-container', {
         effect: 'coverflow',
+        pagination: '.swiper-pagination',
         grabCursor: true,
         initialSlide: 1,
         slideToClickedSlide: true,
