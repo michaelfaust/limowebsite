@@ -850,7 +850,7 @@ img {
 
 .homebanner {
     position: relative;
-    background: url(http://oje3wjypj.bkt.clouddn.com/image/limohomebanner.jpg) no-repeat center center;
+    background: url(../img/homebanner.jpg) no-repeat center center;
     background-size: cover;
     height: 620px;
 }
